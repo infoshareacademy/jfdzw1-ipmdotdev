@@ -1,0 +1,52 @@
+body {
+    background: dimgray;
+}
+header {
+    width:100%;
+    text-align: center;
+    background-color: rgba(255,255,255,0.35);
+    border-radius: 25px;
+}
+header .logo {
+    margin-top: 20px;
+    max-height: 75px;
+    max-width: 303px;
+}
+
+header nav {
+    background: dimgray;
+}
+header nav .menu {
+
+}
+
+header nav .menu li {
+    list-style: none;
+    float: left;
+}
+
+header nav .menu li a {
+    text-decoration: none;
+    color: dimgray;
+    font-family: Lato;
+    font-size: 20px;
+}
+
+.clear {
+    clear: both;
+}
+
+main {
+    background-color: darkslategray;
+    position: relative;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.box1 { background-color: red; left: 5px; top: 5px; z-index: 2;}
+.box2 { background-color: blue; left: 10px; top: 10px; z-index: 3;}
+.box3 { background-color: green; left: 0; top: 0; z-index: 1;}
