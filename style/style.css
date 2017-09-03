@@ -1,17 +1,26 @@
-body {
-
+body, html {
+    height:100%;
+    margin: 0px 0px 0px 0px;
+    background-color: black;
 }
+
+.background-photo {
+    background-image: url(../img/background1.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
 header {
     width:100%;
     text-align: left;
-    background-color: rgba(255,255,255,0.35);
-    border-radius: 25px;
+    background-color: rgba(100,100,100,0.5);
     margin-bottom: 10px;
-    top: 10px;
+    top: 0px;
     position: fixed;
+    height: 75px;
 }
 
 header .login {
@@ -21,18 +30,20 @@ header .login {
 }
 
 input[type=text], input[type=password] {
-    border: 2px solid dimgray;
+    border: 2px solid black;
     border-radius: 5px;
+    font-family: Audiowide;
 }
 
 button[class=sign]{
-    background-color: rgba(255,255,255,0.35);
+    background-color: black;
     color: white;
     border: none;
+    font-family: Audiowide;
 }
 
 button[class=sign]:hover {
-    background-color: dimgrey;
+    background-color: red;
 }
 
 header .logo {
@@ -64,7 +75,7 @@ header nav .menu li a {
     padding: 10px;
     margin: 5px 10px 5px 10px;
     border-radius: 5px;
-    background-color: rgba(255,255,255,0.35);
+    background-color: black;
     text-decoration: none;
     color: white;
     font-family: Audiowide;
@@ -72,12 +83,55 @@ header nav .menu li a {
 }
 
 header nav .menu li a:hover {
-    background-color: dimgray;
+    background-color: red;
 }
 .clear {
     clear: both;
 }
 
+div .hero-box {
+    position: absolute;
+    right: 100px;
+    top: 250px;
+    width: 600px;
+    height: 400px;
+    color: white;
+    font-family: Audiowide;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(100,100,100,0.5);
+    text-align: center;
+}
+
+div .hero-box .hero-copy {
+    position: relative;
+    font-size: 30px;
+    top: 50px;
+}
+
+div .hero-box .join-us {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Audiowide;
+    width: 75%;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+}
+
+div .hero-box .join-us:hover {
+    background-color: white;
+    color: red;
+}
+}
 main {
 
 }
