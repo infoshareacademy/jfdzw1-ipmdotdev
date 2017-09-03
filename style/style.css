@@ -1,52 +1,87 @@
 body {
-    background: dimgray;
+
 }
+
+}
+
 header {
     width:100%;
-    text-align: center;
+    text-align: left;
     background-color: rgba(255,255,255,0.35);
     border-radius: 25px;
+    margin-bottom: 10px;
+    top: 10px;
+    position: fixed;
 }
+
+header .login {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+input[type=text], input[type=password] {
+    border: 2px solid dimgray;
+    border-radius: 5px;
+}
+
+button[class=sign]{
+    background-color: rgba(255,255,255,0.35);
+    color: white;
+    border: none;
+}
+
+button[class=sign]:hover {
+    background-color: dimgrey;
+}
+
 header .logo {
+    float: left;
+    margin-left: 20px;
     margin-top: 20px;
-    max-height: 75px;
-    max-width: 303px;
+    margin-bottom: 20px;
+    max-height: 50px;
+    max-width: 202px;
 }
 
 header nav {
-    background: dimgray;
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 header nav .menu {
-
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 header nav .menu li {
-    list-style: none;
     float: left;
 }
 
 header nav .menu li a {
+    padding: 10px;
+    margin: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.35);
     text-decoration: none;
-    color: dimgray;
-    font-family: Lato;
-    font-size: 20px;
+    color: white;
+    font-family: Audiowide;
+    font-size: 15px;
 }
 
+header nav .menu li a:hover {
+    background-color: dimgray;
+}
 .clear {
     clear: both;
 }
 
 main {
-    background-color: darkslategray;
-    position: relative;
+
 }
 
-.box {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-}
+section {
 
-.box1 { background-color: red; left: 5px; top: 5px; z-index: 2;}
-.box2 { background-color: blue; left: 10px; top: 10px; z-index: 3;}
-.box3 { background-color: green; left: 0; top: 0; z-index: 1;}
+}
