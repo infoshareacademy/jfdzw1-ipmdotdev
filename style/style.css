@@ -113,6 +113,7 @@ div .hero-text {
     top: 50px;
 }
 
+
 div .join-us {
     -webkit-transition-duration: 1s;
     transition-duration: 1s;
@@ -123,9 +124,9 @@ div .join-us {
     text-align: center;
     text-decoration: none;
     color: white;
+    text-shadow: 3px 3px 3px black;
     font-size: 30px;
     font-family: Audiowide;
-    text-shadow: 3px 3px 3px black;
     width: 75%;
     display: inline-block;
     position: relative;
@@ -143,71 +144,93 @@ main {
 
 }
 
-.formularz-reg {
-    color: white;
-    font-family: Audiowide;
+.form-container {
+    width: 100%;
+    margin: 30px 0px 30px 0px;
 }
 
-.onas{
+.form-newsletter {
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    color: white;
+    font-family: Audiowide;
+    border: 5px solid white;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.zgoda-newsletter {
+    font-family: FreeSans;
+    font-size: 12px;
+}
+
+.onas {
     width: 100%;
     height: 150px;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
     color: orange;
-    margin-top: 120px;
 }
 
-
-.socials{
+.socials {
     width: 100%;
     text-align: center;
     background-color: black;
 }
+
 .socialdivs{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-
 }
+
 .fb{
     width: 250px;
     height: 155px;
     float:left;
 }
-.fb:hover{
+
+.fb:hover {
     background-color: #4668b3;
 }
-.yt{
+
+.yt {
     width: 250px;
     height: 155px;
     float:left;
 }
-.yt:hover{
+
+.yt:hover {
     background-color: #d94348;
 }
-.tw{
+
+.tw {
     width: 250px;
     height: 155px;
     float:left;
 }
-.tw:hover{
+
+.tw:hover {
     background-color: #3095d3;
 }
-.gplus{
+
+.gplus {
     width: 250px;
     height: 155px;
     float:left;
 }
-.gplus:hover{
+
+.gplus:hover {
     background-color: #d95333;
 }
 
-footer{
+footer {
     background-color: orange;
     text-align: center;
-
 }
-.fmenu{
+
+.fmenu {
     list-style-type: none;
     margin: 0;
     padding: 10px;
@@ -215,7 +238,8 @@ footer{
     min-height: 40px;
     line-height: 200%;
 }
-.fmenu > li{
+
+.fmenu > li {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -223,18 +247,21 @@ footer{
     color: #ddd;
     text-transform: uppercase;
 }
-.fmenu a{
+
+.fmenu a {
     color: dimgrey;
     text-decoration: none;
 }
-.fmenu a:hover{
+
+.fmenu a:hover {
     color: darkslategray;
 }
-footer > p{
+
+footer > p {
     font-size: 25px;
     color: black;
 }
-#stopa{
+
+#stopa {
     margin-bottom: -25px;
 }
-
