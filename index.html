@@ -2,10 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-
         <link rel="stylesheet" href="style/style.css" />
         <link rel="stylesheet" href="style/fontello/css/fontello.css" />
-        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
         <meta name="description" content="Opis dla przeglądarki" />
         <meta name="keyword" content="kurs, css, www" />
         <title>Challenge</title>
@@ -14,8 +13,7 @@
 
         <div class="background-photo">
             <header>
-
-                <img class="logo" src="img/logo.png" alt="Logo" />
+                <img class="logo" src="img/challenge-logo.png" alt="Challenge - logo strony" />
                 <div class="login">
                     <input type="text" name="username" placeholder="Enter username" />
                     <input type="password" name="password" placeholder="Enter password" />
@@ -26,17 +24,16 @@
                     <ul class="menu">
                         <li><a href="#">Strona główna</a></li>
                         <li><a href="#">Challenge?</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Zapisz się!</a></li>
                         <li><a href="#">O nas</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
-
                 <div class="clear"></div>
             </header>
             <div class="hero-box">
                 <div>
-                    <p class="hero-copy">Challenge - tylko dla tych co żyją na 110%. Jeśli szukasz wyzwań to nie zwlekaj i....</p>
+                    <p class="hero-text">Challenge!<br/>Tylko dla tych co żyją na 110%.<br/>Jeśli szukasz wyzwań<br/>to nie zwlekaj i....</p>
                 </div>
                 <div>
                     <button class="join-us" type="submit">Dołącz do nas!</button>
@@ -44,10 +41,23 @@
             </div>
         </div>
         <main>
-            <section>
-
+            <section class="formularz-reg">
+                <form action="mailto:doktorned1@gmail.com" method="post" enctype="text/plain">
+                    <fieldset>
+                        <legend>Stay tuned!</legend>
+                        Imię:<br/>
+                        <input type="text" name="imie" required><br/>
+                        Nazwisko:<br/>
+                        <input type="text" name="nazwisko" required><br/>
+                        Email:<br/>
+                        <input type="email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" placeholder="example@email.com" required><br/>
+                        Miejsce na miłe słowa:<br/>
+                        <textarea rows="4" cols="50" placeholder="Wyrzuć to z siebie!"></textarea><br/>
+                        <input type="submit" value="Send">
+                        <input type="reset" value="Reset">
+                    </fieldset>
+                </form>
             </section>
-
         </main>
         <div style="clear:both"></div>
         <div class="onas">
@@ -87,9 +97,5 @@
               <li><a href="#">Kontakt</a></li>
           </ul>
             <p>Dołącz do nas, nie zwlekaj.</p>
-        </footer>
-
-        </div>
-
-    </body background= "img/background1.jpg">
+    </body>
 </html>
