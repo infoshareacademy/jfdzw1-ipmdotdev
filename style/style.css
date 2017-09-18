@@ -144,6 +144,12 @@ main {
 
 }
 
+.informacje{
+    width: 100%;
+    margin: 50px 60px 80px 90px;
+}
+
+
 .form-container {
     width: 100%;
     margin: 30px 0px 30px 0px;
@@ -164,7 +170,78 @@ main {
     font-family: FreeSans;
     font-size: 12px;
 }
+.box1 {
+    font-family: "Audiowide";
+    font-size: 30px;
+    color: #ffffff;
+    width: 100%;
+    display: inline-table;
+    position: inherit;
+    margin: 100px 200px 300px 250px;
+}
 
+
+
+.step1 {
+    width: 350px;
+    height: 155px;
+    float: left;
+    margin: 30px 50px 40px 60px;
+
+}
+.register {
+    width: 50%;
+    hight: 50%;
+    margin: 12px;
+}
+.step1:hover {
+
+    color: #2f4f4f;
+}
+.step2 {
+    width: 350px;
+    height: 155px;
+    float: left;
+    margin: 30px 50px 40px 60px;
+}
+.step2:hover {
+
+    color: #2f4f4f;
+}
+.target {
+    width: 50%;
+    hight: 50%;
+    margin: 0px 20px 20px 20px;
+}
+
+.step3 {
+    float:left;
+    width:400px;
+    height:155px;
+    margin: 10px 10px 20px 60px;
+}
+.step3:hover {
+
+    color: #2f4f4f;
+}
+
+.check {
+    width: 50%;
+    hight: 50%;
+    margin: 0px 20px 20px 20px;
+}
+
+
+#r1 {
+    font-size: 20px;
+    font-family: Audiowide;
+}
+
+#box1:after {
+    content:'';
+    display:block;
+    clear:both;
+}
 .onas {
     width: 100%;
     height: 150px;
