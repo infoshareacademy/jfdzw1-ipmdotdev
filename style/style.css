@@ -80,46 +80,53 @@ body, html {
 
 }
 
-div .hero-header-box {
-    right: 100px;
+.hero-header-box {
+    position: absolute;
+    left: 150px;
     top: 200px;
     width: 600px;
     height: 400px;
     color: white;
     border: none;
-    border-radius: 30px;
-    background-color: rgba(100,100,100,0.5);
-    text-align: center;
+    text-align: left;
+    line-height: 100%;
 }
 
-div .hero-header-text {
-    position: relative;
-    font-size: 30px;
-    top: 50px;
+.hero-header-text-bold {
+    font-size: 65px;
+    font-weight: 700;
 }
 
-div .hero-header-join-us {
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    background-color: red;
+.hero-header-text-normal {
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.hero-header-button-join-us {
+    background-color: #00c4cc;
     border: none;
     border-radius: 30px;
-    padding: 30px 60px;
     text-align: center;
     text-decoration: none;
-    color: white;
-    text-shadow: 3px 3px 3px black;
-    font-size: 30px;
-    font-family: Audiowide;
-    width: 75%;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px;
+    width: 300px;
+    height: 15px;
     display: inline-block;
-    position: relative;
-    top: 50px;
 }
-
-div .join-us:hover {
-    background-color: white;
-    color: red;
+.hero-header-button-more {
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    width: 175px;
+    height: 15px;
+    display: inline-block;
 }
 
 /* ##########HERO-HEADER-END########## */
