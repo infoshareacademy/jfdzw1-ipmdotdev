@@ -69,11 +69,15 @@ body, html {
 /* ##########HERO-HEADER-START########## */
 
 .hero-header-background-photo {
-    background-image: url(../img/challenge-background.jpg);
+    background-image: url(../img/background1.jpg);
+    background-size: initial;
     height: 100%;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+
 }
 
 div .hero-header-box {
@@ -128,11 +132,22 @@ main {
 
 }
 
+.main-body-background-photo {
+    background-image: url(../img/background2.png);
+    background-size: initial;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* ##########FORM-NEWSLETTER-START########## */
 
 .form-container {
     width: 100%;
-    margin: 30px 0px 30px 0px;
+    margin: 0px;
 }
 
 .form-newsletter {
@@ -230,6 +245,17 @@ main {
 /* ##########PRODUCT-INFO-END########## */
 
 /* ##########ABOUT-US-START########## */
+
+.bottom-background-photo {
+    background-image: url(../img/background3.jpg);
+    background-size: initial;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 .about-us {
     width: 100%;
