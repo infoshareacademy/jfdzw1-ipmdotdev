@@ -2,7 +2,7 @@ body, html {
     height:100%;
     margin: 0px 0px 0px 0px;
     background-color: #f5f5f5;
-    font-family: Lato;
+    font-family: 'Lato', sans-serif;
 }
 
 /* ##########NAV-BAR-START########## */
@@ -24,7 +24,7 @@ body, html {
     max-width: 300px;
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1500px) {
     .menu-logo {
         display: none;
     }
@@ -91,6 +91,7 @@ body, html {
     border: none;
     text-align: left;
     line-height: 100%;
+
 }
 
 .hero-header-text-bold {
@@ -104,19 +105,24 @@ body, html {
 }
 
 .hero-header-button-join-us {
-    background-color: #00c4cc;
+    background-color: #108489;
     border: none;
     border-radius: 30px;
     text-align: center;
     text-decoration: none;
     font-size: 25px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
     padding: 20px;
-    width: 300px;
+    width: 275px;
     height: 15px;
     display: inline-block;
 }
+
+.hero-header-button-join-us:hover {
+    color: #404154;
+}
+
 .hero-header-button-more {
     border: 2px solid #ffffff;
     border-radius: 30px;
@@ -130,24 +136,197 @@ body, html {
     display: inline-block;
 }
 
+.hero-header-button-more:hover {
+    color: #404154;
+}
+
 /* ##########HERO-HEADER-END########## */
 
 /* ##########MAIN-SECTION-START########## */
 
-main {
-
-}
 
 .main-body-background-photo {
     background-image: url(../img/background2.png);
     background-size: initial;
     height: 100%;
     background-attachment: fixed;
-    background-position: top center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
+
+/* ##########PRODUCT-SHORT-INFO-START########## */
+
+.here-should-be-short-product-info {
+    height: 300px;
+    background-color: #f5f5f5;
+    margin-bottom: 400px;
+}
+
+/*.product-info-container {*/
+    /*font-size: 30px;*/
+    /*color: #ffffff;*/
+    /*width: 100%;*/
+    /*display: inline-table;*/
+    /*position: inherit;*/
+    /*margin: 100px 200px 300px 250px;*/
+/*}*/
+
+/*.product-info-container:after {*/
+    /*content:'';*/
+    /*display:block;*/
+    /*clear:both;*/
+/*}*/
+
+/*.product-info-text {*/
+    /*font-size: 20px;*/
+    /*font-family: Audiowide;*/
+/*}*/
+
+/*.product-info-step1 {*/
+    /*width: 350px;*/
+    /*height: 155px;*/
+    /*float: left;*/
+    /*margin: 30px 50px 40px 60px;*/
+/*}*/
+
+/*.product-info-step1:hover {*/
+    /*color: #2f4f4f;*/
+/*}*/
+
+/*.product-info-img-register {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*margin: 12px;*/
+/*}*/
+
+/*.product-info-step2 {*/
+    /*width: 350px;*/
+    /*height: 155px;*/
+    /*float: left;*/
+    /*margin: 30px 50px 40px 60px;*/
+/*}*/
+
+/*.product-info-step2:hover {*/
+    /*color: #2f4f4f;*/
+/*}*/
+
+/*.product-info-img-target {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*margin: 0px 20px 20px 20px;*/
+/*}*/
+
+/*.product-info-step3 {*/
+    /*float:left;*/
+    /*width:400px;*/
+    /*height:155px;*/
+    /*margin: 10px 10px 20px 60px;*/
+/*}*/
+
+/*.product-info-step3:hover {*/
+    /*color: #2f4f4f;*/
+/*}*/
+
+/*.product-info-img-check {*/
+    /*width: 50%;*/
+    /*height: 50%;*/
+    /*margin: 0px 20px 20px 20px;*/
+/*}*/
+
+/* ##########PRODUCT-SHORT-INFO-END########## */
+
+/* ##########PRODUCT-EXTENDED-INFO-START########## */
+
+.here-should-be-extended-product-info {
+    height: 600px;
+    background-color: #f5f5f5;
+}
+
+.bottom-background-photo {
+    background-image: url(../img/background3.jpg);
+    background-size: initial;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* ##########PRODUCT-EXTENDED-INFO-END########## */
+
+/* ##########ABOUT-US-START########## */
+
+/*.here-should-be-about-us {*/
+    /*height: 500px;*/
+    /*background-color: #f5f5f5;*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+/*}*/
+
+
+
+/*.about-us {*/
+    /*width: 100%;*/
+    /*height: 150px;*/
+    /*border-top: 2px solid grey;*/
+    /*border-bottom: 2px solid grey;*/
+    /*color: white;*/
+    /*font-size: 25px;*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+/*}*/
+
+/*.about-us-info {*/
+    /*height: 150px;*/
+    /*width: 200px;*/
+    /*background-color: black;*/
+    /*float:left;*/
+/*}*/
+
+/*.about-us-ilona {*/
+    /*height: 150px;*/
+    /*width: 220px;*/
+    /*background-color: black;*/
+    /*float:left;*/
+/*}*/
+
+/*.about-us-michal {*/
+    /*height: 150px;*/
+    /*width: 220px;*/
+    /*background-color: black;*/
+    /*float:left;*/
+/*}*/
+
+/*.about-us-piotr {*/
+    /*height: 150px;*/
+    /*width: 220px;*/
+    /*background-color: black;*/
+    /*float:left;*/
+/*}*/
+
+/*.about-us-ilona:hover {*/
+    /*background-color: orange;*/
+/*}*/
+
+/*.about-us-michal:hover {*/
+    /*background-color: orange;*/
+/*}*/
+
+/*.about-us-piotr:hover {*/
+    /*background-color: orange;*/
+/*}*/
+
+/*.about-us-infoend {*/
+    /*height: 150px;*/
+    /*width: 100px;*/
+    /*background-color: black;*/
+    /*float:left;*/
+/*}*/
+
+/* ##########ABOUT-US-END########## */
 
 /* ##########FORM-NEWSLETTER-START########## */
 
@@ -173,155 +352,6 @@ main {
 }
 
 /* ##########FORM-NEWSLETTER-END########## */
-
-/* ##########PRODUCT-INFO-START########## */
-
-.product-info-container {
-    font-family: Audiowide;
-    font-size: 30px;
-    color: #ffffff;
-    width: 100%;
-    display: inline-table;
-    position: inherit;
-    margin: 100px 200px 300px 250px;
-}
-
-.product-info-container:after {
-    content:'';
-    display:block;
-    clear:both;
-}
-
-.product-info-text {
-    font-size: 20px;
-    font-family: Audiowide;
-}
-
-.product-info-step1 {
-    width: 350px;
-    height: 155px;
-    float: left;
-    margin: 30px 50px 40px 60px;
-}
-
-.product-info-step1:hover {
-    color: #2f4f4f;
-}
-
-.product-info-img-register {
-    width: 50%;
-    height: 50%;
-    margin: 12px;
-}
-
-.product-info-step2 {
-    width: 350px;
-    height: 155px;
-    float: left;
-    margin: 30px 50px 40px 60px;
-}
-
-.product-info-step2:hover {
-    color: #2f4f4f;
-}
-
-.product-info-img-target {
-    width: 50%;
-    height: 50%;
-    margin: 0px 20px 20px 20px;
-}
-
-.product-info-step3 {
-    float:left;
-    width:400px;
-    height:155px;
-    margin: 10px 10px 20px 60px;
-}
-
-.product-info-step3:hover {
-    color: #2f4f4f;
-}
-
-.product-info-img-check {
-    width: 50%;
-    height: 50%;
-    margin: 0px 20px 20px 20px;
-}
-
-/* ##########PRODUCT-INFO-END########## */
-
-/* ##########ABOUT-US-START########## */
-
-.bottom-background-photo {
-    background-image: url(../img/background3.jpg);
-    background-size: initial;
-    height: 100%;
-    background-attachment: fixed;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.about-us {
-    width: 100%;
-    height: 150px;
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
-    color: white;
-    font-size: 25px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.about-us-info {
-    height: 150px;
-    width: 200px;
-    background-color: black;
-    float:left;
-}
-
-.about-us-ilona {
-    height: 150px;
-    width: 220px;
-    background-color: black;
-    float:left;
-}
-
-.about-us-michal {
-    height: 150px;
-    width: 220px;
-    background-color: black;
-    float:left;
-}
-
-.about-us-piotr {
-    height: 150px;
-    width: 220px;
-    background-color: black;
-    float:left;
-}
-
-.about-us-ilona:hover {
-    background-color: orange;
-}
-
-.about-us-michal:hover {
-    background-color: orange;
-}
-
-.about-us-piotr:hover {
-    background-color: orange;
-}
-
-.about-us-infoend {
-    height: 150px;
-    width: 100px;
-    background-color: black;
-    float:left;
-}
-
-/* ##########ABOUT-US-END########## */
 
 /* ##########SOCIALS-ICONS-START########## */
 
