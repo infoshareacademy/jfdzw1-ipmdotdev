@@ -107,6 +107,7 @@ body, html {
     font-weight: 300;
 }
 
+
 .hero-header-button-join-us {
     background-color: #108489;
     border: none;
@@ -143,6 +144,14 @@ body, html {
     color: #404154;
 }
 
+.zajawka {
+    font-size: 30px;
+    font-family: Lato;
+    line-height: 150%;
+    text-align: center;
+
+}
+
 /* ##########HERO-HEADER-END########## */
 
 /* ##########MAIN-SECTION-START########## */
@@ -159,7 +168,14 @@ body, html {
 }
 
 /* ##########PRODUCT-SHORT-INFO-START########## */
+.tekst1 {
+    font-size: 40px;
+    font-family: Lato;
+    text-align: center;
+    color: #108489;
+    font-weight: bold;
 
+}
 .here-should-be-short-product-info {
     width: 100%;
     background-color: #f5f5f5;
@@ -190,7 +206,7 @@ body, html {
 }
 
 .product-info-img {
-    height: 100px;
+    height: 150px;
     margin: 20px 20px 0px 20px;
 }
 
@@ -201,6 +217,13 @@ body, html {
 .here-should-be-extended-product-info {
     width: 100%;
     background-color: #f5f5f5;
+}
+.jakto {
+    font-size: 40px;
+    font-family: Lato;
+    text-align: center;
+    color: #108489;
+    font-weight: bold;
 }
 
 .extended-product-info-container {
@@ -213,7 +236,7 @@ body, html {
 }
 
 .extended-product-info-text {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .extended-product-info {
@@ -228,7 +251,7 @@ body, html {
 }
 
 .extended-product-info-img {
-    height: 75px;
+    height: 160px;
     margin: 20px 20px 0px 20px;
 }
 
