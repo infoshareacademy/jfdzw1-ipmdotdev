@@ -40,7 +40,7 @@ body, html {
 .menu {
     display: inline-block;
     list-style-type: none;
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     padding: 0;
 }
 
@@ -63,10 +63,6 @@ body, html {
 
 .nav a:hover {
     background-color: #00c4cc;
-}
-
-.clear {
-    clear: both;
 }
 
 /* ##########NAV-BAR-END########## */
@@ -364,94 +360,36 @@ body, html {
 footer {
     position: absolute;
     bottom: 0;
-    background-color: #2f4f4f;
+    background-color: #108489;
     width: 100%;
 
 }
 
-/* ##########SOCIALS-ICONS-START########## */
-
-.socials-container {
-    margin: 10px 0px 10px 0px;
-}
-
-.socials-fb {
-    width: 100px;
-    /*height: 155px;*/
-    float:left;
-}
-
-.socials-fb:hover {
-    background-color: #4668b3;
-}
-
-.socials-yt {
-    width: 100px;
-    /*height: 155px;*/
-    float:left;
-}
-
-.socials-yt:hover {
-    background-color: #d94348;
-}
-
-.socials-tw {
-    width: 100px;
-    /*height: 155px;*/
-    float:left;
-}
-
-.socials-tw:hover {
-    background-color: #3095d3;
-}
-
-.socials-gplus {
-    width: 100px;
-    /*height: 155px;*/
-    float:left;
-}
-
-.socials-gplus:hover {
-    background-color: #d95333;
-}
-
-/* ##########SOCIALS-ICONS-END########## */
-
-
-
-.footer-container {
-    margin-bottom: -25px;
-}
-
 .footer-menu {
+    display: inline-block;
     list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    font-size: 18px;
-    min-height: 40px;
-    line-height: 200%;
+    margin: 0px;
+    padding: 0;
 }
 
-.footer-menu > li {
-    display: inline-block;
-    padding-left: 25px;
-    padding-right: 25px;
-    font-size: 25px;
-    color: #ddd;
-    text-transform: uppercase;
+.footer-menu li {
+    float: left;
 }
 
 .footer-menu a {
-    color: dimgrey;
+    display: block;
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    margin: 15px 20px 10px 20px;
+    border-radius: 30px;
     text-decoration: none;
+    color: #ffffff;
+    font-size: 21px;
 }
 
 .footer-menu a:hover {
-    color: darkslategray;
+    background-color: #00c4cc;
 }
-
-.footer-join-us {
-    font-size: 25px;
-}
-
 /* ##########FOOTER-SECTION-END########## */
