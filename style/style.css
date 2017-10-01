@@ -266,6 +266,33 @@ body, html {
     position: relative;
 }
 
+/* ##########FORM-NEWSLETTER-START########## */
+
+.form-newsletter {
+    background-color: #f5f5f5;
+    position: absolute;
+    bottom: 0;
+    color: #2f4f4f;
+    padding: 30px;
+}
+
+.form-agreement-newsletter {
+    font-size: 12px;
+}
+
+/* ##########FORM-NEWSLETTER-END########## */
+
+.bottom-background-photo {
+    background-image: url(../img/background4.jpg);
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 /* ##########ABOUT-US-START########## */
 
 .about-us-section {
@@ -314,33 +341,6 @@ body, html {
     padding: 0px 10px;
 }
 /* ##########ABOUT-US-END########## */
-
-.bottom-background-photo {
-    background-image: url(../img/background4.jpg);
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* ##########FORM-NEWSLETTER-START########## */
-
-.form-newsletter {
-    background-color: #f5f5f5;
-    position: absolute;
-    bottom: 0;
-    color: #2f4f4f;
-    padding: 30px;
-}
-
-.form-agreement-newsletter {
-    font-size: 12px;
-}
-
-/* ##########FORM-NEWSLETTER-END########## */
 
 /* ##########MAIN-SECTION-END########## */
 
