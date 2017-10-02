@@ -33,6 +33,41 @@
         transform: translateX(0);
     }
 }
+
+@-moz-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
 @keyframes swing
 {
     15%
@@ -121,6 +156,9 @@ body, html {
     text-decoration: none;
     color: #404154;
     font-size: 15px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .nav a:hover {
@@ -181,14 +219,17 @@ body, html {
     display: inline-block;
     margin: 0px 10px 0px 0px;
     -webkit-transition: background-color 1s, color 1s;
+    -moz-transition: background-color 1s, color 1s;
     transition: background-color 1s, color 1s;
 
 }
 
 .hero-header-button-join-us:hover {
     -webkit-animation: swing 1s ease;
+    -moz-animation: swing 1s ease;
     animation: swing 1s ease;
     -webkit-animation-iteration-count: 1;
+    -moz-iteration-count: 1;
     animation-iteration-count: 1;
     color: #108489;
     background-color: #ffffff;
@@ -206,13 +247,16 @@ body, html {
     height: 15px;
     display: inline-block;
     -webkit-transition: background-color 1s, color 1s;
+    -moz-transition: background-color 1s, color 1s;
     transition: background-color 1s, color 1s;
 }
 
 .hero-header-button-more:hover {
     -webkit-animation: swing 1s ease;
+    -moz-animation: swing 1s ease;
     animation: swing 1s ease;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     background-color: #ffffff;
     color: #108489;
@@ -470,10 +514,16 @@ footer {
     background-color: #f5f5f5;
     margin: 0px 20px;
     border-radius: 20px;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    transition: 2s;
 }
 
 .footer-socials-logos:hover {
     background-color: #00c4cc;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    transform: rotate(-360deg);
 }
 
 .footer-menu {
@@ -497,6 +547,9 @@ footer {
     color: #f5f5f5;
     font-size: 15px;
     border-radius: 20px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
 }
 
 .footer-menu a:hover {
