@@ -12,31 +12,21 @@ body, html {
     background-color: #f5f5f5;
     top: 0px;
     position: fixed;
-    height: 75px;
+    height: 60px;
     z-index: 1000;
 }
 
 .menu-logo {
     float: left;
     position: absolute;
-    margin: 15px 20px 15px 5px;
-    max-height: 100px;
-    max-width: 275px;
+    margin: 10px 5px 10px 5px;
+    max-height: 40px;
 }
 
 .nav {
     text-align: right;
 }
 
-@media screen and (max-width: 1200px) {
-    .menu-logo {
-        display: none;
-    }
-
-    .nav {
-        text-align: center;
-    }
-}
 .menu {
     display: inline-block;
     list-style-type: none;
@@ -51,14 +41,14 @@ body, html {
 .nav a {
     display: block;
     text-align: center;
-    width: 150px;
-    height: 30px;
+    width: 100px;
+    height: 20px;
     padding: 10px;
-    margin: 15px 20px 10px 20px;
+    margin: 10px 15px 10px 15px;
     border-radius: 30px;
     text-decoration: none;
     color: #404154;
-    font-size: 21px;
+    font-size: 15px;
 }
 
 .nav a:hover {
