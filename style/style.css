@@ -471,6 +471,12 @@ body, html {
 .about-us-socials img {
     padding: 0px 10px;
 }
+
+.about-us-socials img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
 /* ##########ABOUT-US-END########## */
 
 /* ##########MAIN-SECTION-END########## */
