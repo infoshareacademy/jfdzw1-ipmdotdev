@@ -1,3 +1,75 @@
+/* ##########ANIMATIONS-START########## */
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(4px);
+        transform: translateX(4px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-4px);
+        transform: translateX(-4px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/* ##########ANIMATIONS-END########## */
+
+
 body, html {
     height:100%;
     margin: 0px 0px 0px 0px;
@@ -107,10 +179,19 @@ body, html {
     width: 275px;
     height: 20px;
     display: inline-block;
+    margin: 0px 10px 0px 0px;
+    -webkit-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+
 }
 
 .hero-header-button-join-us:hover {
-    color: #404154;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    color: #108489;
+    background-color: #ffffff;
 }
 
 .hero-header-button-more {
@@ -124,10 +205,17 @@ body, html {
     width: 175px;
     height: 15px;
     display: inline-block;
+    -webkit-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
 }
 
 .hero-header-button-more:hover {
-    color: #404154;
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    background-color: #ffffff;
+    color: #108489;
 }
 
 .zajawka {
