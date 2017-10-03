@@ -86,22 +86,25 @@
                 </div>
             </div>
         <div class="center-bottom-background-photo">
-            <div class="form-newsletter">
-                <h1>Stay tuned!</h1>
-                <form action="mailto:doktorned1@gmail.com?Subject="Cześć! Chcę dołączyć do Challenge" method="post" enctype="text/plain">
-                Imię:<br/>
-                <input type="text" name="imie" placeholder="Wprowadź imię" required /><br/>
-                Nazwisko:<br/>
-                <input type="text" name="nazwisko" placeholder="Wprowadź nazwisko" required /><br/>
-                Email:<br/>
-                <input type="email" name="email" placeholder="example@email.com" required /><br/>
-                <div class="form-agreement-newsletter">
-                    <input type="checkbox" required />Wyrażam zgodę na otrzymywanie drogą elektroniczną na wskazany przeze mnie adres e-mail informacji handlowej w rozumieniu art. 10 ust. 1 ustawy z dnia 18 lipca 2002 roku o świadczeniu usług drogą elektroniczną od IPM.dev<br/>
-                    <input type="checkbox" required />Wyrażam zgodę na przetwarzanie moich danych osobowych w rozumieniu ustawy z dnia 29 sierpnia 1997 roku o ochronie danych osobowych oraz ustawy z dnia 16 lipca 2004 roku Prawo telekomunikacyjne w celach marketingowych przez IPM.dev i oświadczam, iż podanie przeze mnie danych osobowych jest dobrowolne oraz iż zostałem poinformowany o prawie żądania dostępu do moich danych osobowych, ich zmiany oraz usunięcia.<br/>
+            <div class="newsletter-container">
+                <p class="tekst1">Bądź na bieżąco!</p>
+                <div class="newsletter-box-flex">
+                    <div class="newsletter-box-img">
+                        <img class="newsletter-img" src="img/man-in-space.jpg" alt="człowiek stojący na księżycu z flagą"/>
+                    </div>
+                    <div class="newsletter-box-form">
+                        <form action="http://hireux.pl/form.php" method="post" target="_blank">
+                            <h1>Mały krok dla Ciebie.<br/>Wielki krok dla Twojego życia.</h1>
+                            <h3>Zapisz się do newslettera i nie przegap premiery.*</h3>
+                            <input type="text" placeholder="Imię" name="name" required />
+                            <input type="email" placeholder="Email" name="email" required />
+                            <button type="submit" class="submit">Zapisz się</button>
+                            <p>*Otrzymasz tylko jeden email z informacją o premierze naszej aplikacji.<br/>
+                                Twoje dane są z nami bezpieczne.</p>
+                        </form>
+
+                    </div>
                 </div>
-                <input type="submit" value="Zapisz się">
-                <input type="reset" value="Anuluj">
-                </form>
             </div>
         </div>
         <div class="bottom-background-photo">
