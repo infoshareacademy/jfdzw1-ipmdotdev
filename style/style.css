@@ -182,10 +182,8 @@ body, html {
 
 .hero-header-box {
     position: absolute;
-    left: 150px;
-    top: 150px;
-    width: 600px;
-    height: 400px;
+    left: 10%;
+    top: 20%;
     color: white;
     border: none;
     text-align: left;
@@ -303,7 +301,7 @@ body, html {
     font-size: 25px;
     color: #2f4f4f;
     width: 100%;
-    display: inline-block;
+    display: flex;
     text-align: center;
     padding: 0px 0px 40px 0px;
     justify-content: center;
@@ -315,29 +313,13 @@ body, html {
     font-size: 15px;
 }
 
-
-
 .flex-items {
-    width: 300px;
-    height: 150px;
-    display: inline-block;
-    justify-content: space-around;
-    margin: 30px;
-    padding: 0px 20px 40px 40px;
-    align-items: flex-start;
-
-
-
-
-}
-
-.product-info:hover {
-    color: #00c4cc;
+    width: 20%;
+    padding: 0px 20px;
 }
 
 .product-info-img {
     height: 250px;
-    margin: 20px 20px 0px 20px;
 }
 
 /* ##########PRODUCT-SHORT-INFO-END########## */
@@ -443,7 +425,6 @@ body, html {
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
-    font-size: 15px;
 }
 
 .newsletter-box-form input:placeholder-shown {
