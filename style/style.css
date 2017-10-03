@@ -400,16 +400,90 @@ body, html {
 
 /* ##########FORM-NEWSLETTER-START########## */
 
-.form-newsletter {
+.newsletter-container {
     background-color: #f5f5f5;
     position: absolute;
     bottom: 0;
-    color: #2f4f4f;
-    padding: 30px;
+    width: 100%;
 }
 
-.form-agreement-newsletter {
-    font-size: 12px;
+.newsletter-box-flex {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 40px 0px;
+}
+
+.newsletter-img {
+    height: 400px;
+}
+
+.newsletter-box-form {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    color: #2f4f4f;
+}
+
+.newsletter-box-form form {
+    width: 100%;
+}
+
+.newsletter-box-form h1 {
+    margin-top: 0px;
+    font-size: 30px;
+}
+
+.newsletter-box-form form input {
+    width: 90%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #2f4f4f;;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.newsletter-box-form input:placeholder-shown {
+    text-align: center;
+    font-size: 15px;
+}
+
+.newsletter-box-form input::placeholder {
+    color: #00c4cc;
+}
+
+.newsletter-box-form button {
+    margin: 10px 0px;
+    width: 90%;
+    background-color: #108489;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    height: 50px;
+    -webkit-transition: background-color 1s, color 1s, border 1s;
+    -moz-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s;
+}
+
+.newsletter-box-form button:hover {
+    -webkit-animation: swing 1s ease;
+    -moz-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    -moz-iteration-count: 1;
+    animation-iteration-count: 1;
+    color: #108489;
+    background-color: #f5f5f5;
+    border: 2px solid #108489;
+}
+
+.newsletter-box-form p {
+    font-size: 10px;
 }
 
 /* ##########FORM-NEWSLETTER-END########## */
