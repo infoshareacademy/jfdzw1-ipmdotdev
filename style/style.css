@@ -356,20 +356,23 @@ body, html {
     font-weight: bold;
 }
 
-.extended-product-info-container {
+.flex-container2 {
     font-size: 20px;
     color: #2f4f4f;
     width: 100%;
     display: inline-block;
     text-align: center;
     padding: 0px 0px 40px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .extended-product-info-text {
     font-size: 16px;
 }
 
-.extended-product-info {
+.flex-item {
     width: 350px;
     height: 155px;
     display: inline-block;
