@@ -177,10 +177,17 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+
+}
+
+.hero-header-dim-background {
+    background-color: rgba(0, 0, 0, 0.4);
+    width:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-header-box {
@@ -188,7 +195,6 @@ body, html {
     border: none;
     text-align: center;
     line-height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
     width: 50%;
     border-radius: 20px;
     padding: 20px;
@@ -208,7 +214,7 @@ body, html {
 .hero-header-button-join-us {
     background-color: #00c4cc;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -238,13 +244,13 @@ body, html {
 
 .hero-header-button-more {
     border: 2px solid #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     padding: 20px;
-    width: 50%;
+    width: 30%;
     height: 15px;
     display: inline-block;
     -webkit-transition: background-color 1s, color 1s;
