@@ -296,6 +296,8 @@ body, html {
     width: 100%;
     background-color: #f5f5f5;
     top: 0;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tekst1 {
@@ -306,14 +308,28 @@ body, html {
     font-weight: bold;
 }
 
+.short-info-flex-container {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.short-info-flex-box {
+    width: 30%;
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    border-radius: 50px;
+}
 
 .product-info-text {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
 .product-info-img {
-    height: 250px;
+    height: 200px;
 }
 
 
