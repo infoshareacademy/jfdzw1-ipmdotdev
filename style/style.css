@@ -177,10 +177,17 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+
+}
+
+.hero-header-dim-background {
+    background-color: rgba(0, 0, 0, 0.4);
+    width:100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero-header-box {
@@ -188,7 +195,6 @@ body, html {
     border: none;
     text-align: center;
     line-height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
     width: 50%;
     border-radius: 20px;
     padding: 20px;
@@ -208,7 +214,7 @@ body, html {
 .hero-header-button-join-us {
     background-color: #00c4cc;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 30px;
@@ -238,13 +244,13 @@ body, html {
 
 .hero-header-button-more {
     border: 2px solid #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     padding: 20px;
-    width: 50%;
+    width: 30%;
     height: 15px;
     display: inline-block;
     -webkit-transition: background-color 1s, color 1s;
@@ -274,22 +280,13 @@ body, html {
 
 /* ##########MAIN-SECTION-START########## */
 
-.main-body-background-photo {
-    background-image: url(../img/background2.png);
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
 /* ##########PRODUCT-SHORT-INFO-START########## */
 
 .here-should-be-short-product-info {
     width: 100%;
     background-color: #f5f5f5;
-    top: 0;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .tekst1 {
@@ -300,18 +297,41 @@ body, html {
     font-weight: bold;
 }
 
+.short-info-flex-container {
+    text-align: center;
+    margin: auto;
+    width: 80%;
+}
+
+.short-info-flex-box {
+    width: 30%;
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    border-radius: 50px;
+}
 
 .product-info-text {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 
 .product-info-img {
-    height: 250px;
+    height: 200px;
 }
 
-
 /* ##########PRODUCT-SHORT-INFO-END########## */
+
+.main-body-background-photo {
+    background-image: url(../img/background2.png);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 /* ##########PRODUCT-EXTENDED-INFO-START########## */
 
@@ -363,21 +383,17 @@ body, html {
 
 .center-bottom-background-photo {
     background-image: url(../img/background3.jpg);
-    height: 100%;
-    width: 100%;
+    height: 400px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 /* ##########FORM-NEWSLETTER-START########## */
 
 .newsletter-container {
     background-color: #f5f5f5;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -464,21 +480,17 @@ body, html {
 
 .bottom-background-photo {
     background-image: url(../img/background4.jpg);
-    height: 100%;
-    width: 100%;
+    height: 400px;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
 
 /* ##########ABOUT-US-START########## */
 
 .about-us-section {
     background-color: #f5f5f5;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -527,35 +539,29 @@ body, html {
 }
 /* ##########ABOUT-US-END########## */
 
-/* ##########MAIN-SECTION-END########## */
-
-/* ##########FOOTER-START########## */
-
 .footer-background-photo {
     background-image: url(../img/background5.jpg);
-    height: 50%;
-    width: 100%;
+    height: 400px;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 }
+
+/* ##########MAIN-SECTION-END########## */
+
+/* ##########FOOTER-START########## */
 
 footer {
-    position: absolute;
-    bottom: 0;
     background-color: #108489;
     width: 100%;
-
-}
-
-.footer-container {
     text-align: center;
+    padding: 20px;
 }
 
-.footer-container h1 {
+footer h1 {
     color: #f5f5f5;
+    margin-top: 0px;
 }
 
 .footer-socials {
