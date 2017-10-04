@@ -177,18 +177,21 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .hero-header-box {
-    position: absolute;
-    left: 10%;
-    top: 20%;
     color: white;
     border: none;
-    text-align: left;
+    text-align: center;
     line-height: 100%;
-
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
 }
 
 .hero-header-text-bold {
@@ -203,19 +206,19 @@ body, html {
 
 
 .hero-header-button-join-us {
-    background-color: #108489;
+    background-color: #00c4cc;
     border: none;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     color: #fff;
     padding: 20px;
-    width: 275px;
+    width: 70%;
     height: 20px;
     display: inline-block;
-    margin: 0px 10px 0px 0px;
+    margin: 0px;
     -webkit-transition: background-color 1s, color 1s;
     -moz-transition: background-color 1s, color 1s;
     transition: background-color 1s, color 1s;
@@ -229,19 +232,19 @@ body, html {
     -webkit-animation-iteration-count: 1;
     -moz-iteration-count: 1;
     animation-iteration-count: 1;
-    color: #108489;
+    color: #00c4cc;
     background-color: #ffffff;
 }
 
 .hero-header-button-more {
     border: 2px solid #ffffff;
-    border-radius: 30px;
+    border-radius: 20px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     padding: 20px;
-    width: 175px;
+    width: 50%;
     height: 15px;
     display: inline-block;
     -webkit-transition: background-color 1s, color 1s;
@@ -257,14 +260,14 @@ body, html {
     -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     background-color: #ffffff;
-    color: #108489;
+    color: #00c4cc;
 }
 
 .zajawka {
     font-size: 25px;
     font-family: Lato;
     line-height: 150%;
-    text-align: left;
+    text-align: center;
 }
 
 /* ##########HERO-HEADER-END########## */
