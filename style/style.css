@@ -192,7 +192,7 @@ body, html {
     border: none;
     text-align: center;
     line-height: 100%;
-    width: 50%;
+    width: 100%;
     padding: 20px;
 }
 
@@ -217,7 +217,7 @@ body, html {
     font-weight: 700;
     color: #fff;
     padding: 20px;
-    width: 70%;
+    width: 35%;
     height: 20px;
     display: inline-block;
     margin: 0px;
@@ -246,7 +246,7 @@ body, html {
     font-size: 20px;
     color: #fff;
     padding: 20px;
-    width: 30%;
+    width: 15%;
     height: 15px;
     display: inline-block;
     -webkit-transition: background-color 1s, color 1s;
@@ -277,64 +277,64 @@ body, html {
 
 /* ##########PRODUCT-SHORT-INFO-START########## */
 
-.here-should-be-short-product-info {
-    background-color: #f5f5f5;
+.short-product-info-container {
+    background: #f5f5f5; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(bottom right, #00c4cc, #f5f5f5); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #00c4cc, #f5f5f5); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #00c4cc, #f5f5f5); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom right, #00c4cc, #f5f5f5); /* Standard syntax */
+    text-align: center;
+    margin: 0px;
+    padding: 20px
 }
 
-.tekst1 {
+.section-title {
     font-size: 40px;
     font-family: Lato;
     text-align: center;
     color: #108489;
-    font-weight: bold;
-    margin: 0 ;
-    padding: 8px;
+    font-weight: 700;
+    padding: 20px 10px 10px 10px;
+    margin: 0px;
+
 }
 
-.flex-container{
+.short-product-info-flex-container {
     font-size: 25px;
     color: #2f4f4f;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    width: 80%;
+    margin: auto;
 }
 
-.item1
-.item2
-.item3
-.item4 {
-    width: 300px;
-    height: 300px;
-    padding: 0px 60px 15px 90px;
+.product-info-flex-item {
+    width: 35%;
     text-align: center;
+    padding: 10px;
+    margin: auto;
+
 }
 
 
 .product-info-text {
-    font-size: 15px;
+    font-size: 20px;
 }
+
 .product-info-img {
-    width: 250px;
-    height: 250px;
-    padding: 200;
+
 }
 
 /* ##########PRODUCT-SHORT-INFO-END########## */
+
 /* ##########PRODUCT-EXTENDED-INFO-START########## */
-.here-should-be-extended-product-info {
+
+.extended-product-info-container {
     width: 100%;
     hight: 80%;
     background-color: #f5f5f5;
-}
-.jakto {
-    font-size: 40px;
-    font-family: Lato;
-    text-align: center;
-    color: #108489;
-    font-weight: bold;
-    margin: 0;
-    padding: 8px;
 }
 
 .big {
