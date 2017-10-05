@@ -322,6 +322,8 @@ body, html {
 
 .product-info-text {
     font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .product-info-img {
@@ -364,6 +366,8 @@ body, html {
 }
 .extended-product-info-text {
     font-size: 20px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .extended-flex-item-product-info {
@@ -375,7 +379,7 @@ body, html {
 }
 
 .extended-product-info-img {
-
+    width: 250px;
 }
 
 /* ##########PRODUCT-EXTENDED-INFO-END########## */
@@ -439,7 +443,7 @@ body, html {
     margin-bottom: 20px;
     padding: 10px;
     text-align: center;
-    color: #00c4cc;
+    color: #108489;
     font-size: 15px;
 }
 
@@ -449,7 +453,7 @@ body, html {
 }
 
 .newsletter-box-form input::placeholder {
-    color: #00c4cc;
+    color: #108489;
 }
 
 .newsletter-box-form button {
@@ -507,11 +511,6 @@ body, html {
     padding: 20px 0px;
 }
 
-.about-us-section h1 {
-    text-align: center;
-    color: #108489;
-}
-
 .about-us-flex-container {
     font-size: 20px;
     color: #2f4f4f;
@@ -538,10 +537,12 @@ body, html {
 .about-us-text {
     font-size: 15px;
     margin-bottom: 25px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about-us-socials img {
-    padding: 0px 10px;
+    padding: 20px 10px 0px 10px;
 }
 
 .about-us-socials img:hover {
