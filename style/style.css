@@ -120,7 +120,7 @@ body, html {
     top: 0px;
     position: fixed;
     height: 60px;
-    z-index: 1000;
+    z-index: 5;
 }
 
 .menu-logo {
@@ -298,12 +298,11 @@ body, html {
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
+    weight: 100%
 }
 
-.item1
-.item2
-.item3
-.item4 {
+
+.item {
     width: 300px;
     height: 300px;
     padding: 0px 60px 15px 90px;
