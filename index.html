@@ -3,22 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="style/style.css" />
-        <link rel="stylesheet" href="style/fontello/css/fontello.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
         <meta name="description" content="Platforma, która odmieni Twoje życie!" />
         <meta name="keyword" content="wyzwania, challange" />
         <title>Switcheroo - podejmij wyzwanie!</title>
     </head>
     <body>
-        <div class="hero-header-background-photo">
+        <div class="hero-header-background-photo" id="home-page">
             <div class="header">
-                <img class="menu-logo" src="img/switcheroo-logo.png" alt="Switcheroo - tekstowe logo" />
+                <a href="#home-page"><img class="menu-logo" src="img/switcheroo-logo.png" alt="Switcheroo - tekstowe logo"/></a>
                 <div class="nav">
                     <ul class="menu">
-                        <li><a href="#">Jak to działa?</a></li>
-                        <li><a href="#">Wejdź do gry</a></li>
-                        <li><a href="#">Poznaj nas</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#how-it-works">Jak to działa?</a></li>
+                        <li><a href="#enter-the-game">Wejdź do gry</a></li>
+                        <li><a href="#meet-us">Poznaj nas</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +28,7 @@
                         <p class="hero-header-text-normal">zacznij żyć na 110%</p>
                     </div>
                     <div>
-                        <a href="#" class="hero-header-button-join-us"><<< Dołącz do nas >>></a>
+                        <a href="#" class="hero-header-button-join-us">Dołącz do nas</a>
                     </div>
                     <div>
                         <p class="hero-header-copy-text"><strong>Nie bądź pionkiem - zostań graczem.<br>Wyznacz swoje cele i zmień swoje życie.<br>
@@ -42,7 +41,7 @@
             </div>
         </div>
         <div class="here-should-be-short-product-info">
-            <p class="tekst1"> Switcheroo to miejsce dla Ciebie jeżeli:</p>
+            <h2 class="section-title"> Switcheroo to miejsce dla Ciebie jeżeli:</h2>
             <div class="flex-container">
                 <div class="flex-item product-info">
                     <img class="product-info-img" src="img/potrzebujeszzmian2.png"><h3>Potrzebujesz zmian</h3>
@@ -64,8 +63,9 @@
         </div>
 
         <div class="main-body-background-photo"></div>
+        <span class="anchor-fix" id="how-it-works"></span>
         <div class="here-should-be-extended-product-info">
-            <p class="jakto"> Jak to działa?</p>
+            <h2 class="section-title">Jak to działa?</h2>
             <div class="flex-container big">
                 <div class="flex-item product-info">
                     <img class="extended-product-info-img" src="img/awejdzdogry.png"/><h3>Wejdź do gry</h3>
@@ -90,8 +90,9 @@
             </div>
         </div>
         <div class="center-bottom-background-photo"></div>
+        <span class="anchor-fix" id="enter-the-game"></span>
         <div class="newsletter-container">
-            <p class="section-title">Bądź na bieżąco!</p>
+            <h2 class="section-title">Bądź na bieżąco!</h2>
             <div class="newsletter-box-flex">
                 <div class="newsletter-box-img">
                     <img class="newsletter-img" src="img/man-in-space.jpg" alt="człowiek stojący na księżycu z flagą"/>
@@ -110,8 +111,9 @@
             </div>
         </div>
         <div class="bottom-background-photo"></div>
+        <span class="anchor-fix" id="meet-us"></span>
         <div class ="about-us-section">
-            <p class="section-title">Tworzymy tę aplikację, bo sami jej potrzebujemy!</p>
+            <h2 class="section-title">Tworzymy tę aplikację, bo sami jej potrzebujemy!</h2>
             <div class="about-us-flex-container">
                 <div class="about-us-member">
                     <img class="about-us-img" src="img/about-us-ilona.jpeg"/><h3>Ilona Kondrat</h3>
@@ -147,8 +149,8 @@
             </div>
         </div>
         <div class="footer-background-photo"></div>
-        <footer>
-            <h1>Śledź nas na mediach społecznościowych!</h1>
+        <footer id="contact">
+            <h2 class="section-title-white">Śledź nas na mediach społecznościowych!</h2>
             <div class="footer-socials">
                 <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-facebook.png" alt="facebook logo"/></a></div>
                 <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-youtube.png" alt="youtube logo"/></a></div>
@@ -163,7 +165,7 @@
                 <li><a href="#">Poznaj nas</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
-            <p class="footer-copyright">IM.dev copyright 2017®</p>
+            <p class="footer-copyright">IPM.dev copyright 2017®</p>
         </footer>
     </body>
 </html>
