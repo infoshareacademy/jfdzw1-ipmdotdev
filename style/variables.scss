@@ -1,0 +1,28 @@
+/* ##########GLOBAL-VARIABLES-START########## */
+
+$standard-background-color: #f5f5f5;
+$standard-font: 'Lato', sans-serif;
+$standard-font-size: 16px;
+$standard-text-color: #404154;
+$light-green-color: #00C4CC;
+$dark-green-color: #108489;
+
+/* ##########GLOBAL-VARIABLES-END########## */
+
+/* ##########MIXINS-START########## */
+
+@mixin hover-transition($value) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  transition: $value;
+}
+
+@mixin background-photo() {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ##########MIXINS-END########## */
