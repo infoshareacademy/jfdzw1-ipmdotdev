@@ -25,4 +25,10 @@ $dark-green-color: #108489;
   background-size: cover;
 }
 
+@mixin flex-wrap() {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
 /* ##########MIXINS-END########## */
