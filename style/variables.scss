@@ -11,14 +11,22 @@ $dark-green-color: #108489;
 
 /* ##########MIXINS-START########## */
 
-@mixin hover-transition($value) {
-  -webkit-transition: $value;
-  -moz-transition: $value;
-  transition: $value;
+@mixin hover-transition($hover-background: null, $hover-text-color: null, $hover-border: null) { /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: $hover-background, $hover-text-color, $hover-border;
+  -moz-transition: $hover-background, $hover-text-color, $hover-border;
+  transition: $hover-background, $hover-text-color, $hover-border;
+}
+
+@mixin swing-animation($swing-value, $swing-iteration) {
+  -webkit-animation: $swing-value;
+  -moz-animation: $swing-value;
+  animation: $swing-value;
+  -webkit-animation-iteration-count: $swing-iteration;
+  -moz-iteration-count: $swing-iteration;
+  animation-iteration-count: $swing-iteration;
 }
 
 @mixin background-photo() {
-  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

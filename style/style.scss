@@ -3,19 +3,9 @@
 body {
     height:100%;
     margin: 0px;
-    background-color: #f5f5f5;
-    font-family: 'Lato', sans-serif;
-}
-
-/* ##########NAV-BAR-START########## */
-
-.header {
-    width:100%;
-    background-color: #f5f5f5;
-    top: 0px;
-    position: fixed;
-    height: 60px;
-    z-index: 1000;
+    background-color: $standard-background-color;
+    font-family: $standard-font;
+    font-size: $standard-font-size;
 }
 
 .anchor-fix {
@@ -25,8 +15,18 @@ body {
     visibility:hidden;
 }
 
+/* ##########NAV-BAR-START########## */
 
-.menu-logo {
+.header {
+    width:100%;
+    background-color: $standard-background-color;
+    top: 0px;
+    position: fixed;
+    height: 60px;
+    z-index: 1000;
+}
+
+.header-logo {
     float: left;
     position: absolute;
     margin: 10px 5px;
@@ -36,36 +36,32 @@ body {
 .nav {
     text-align: right;
 
-    li {
-        float: left;
+    .menu {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
 
-        a {
-            display: block;
-            text-align: center;
-            width: 100px;
-            height: 20px;
-            padding: 10px;
-            margin: 10px 15px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: #404154;
-            font-size: 16px;
-            -webkit-transition: background-color 1s;
-            -moz-transition: background-color 1s;
-            transition: background-color 1s;
+        li {
+            float: left;
 
-            &:hover {
-                background-color: #00c4cc;
+            a {
+                display: block;
+                text-align: center;
+                width: 100px;
+                height: 20px;
+                padding: 10px;
+                margin: 10px 15px;
+                border-radius: 10px;
+                text-decoration: none;
+                color: $standard-text-color;
+                @include hover-transition(background-color 1s);
+                &:hover {
+                    background-color: $light-green-color;
+                }
             }
         }
     }
-}
-
-.menu {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
 }
 
 /* ##########NAV-BAR-END########## */
@@ -75,10 +71,11 @@ body {
 .hero-header-background-photo {
     background-image: url(../img/background1.jpg);
     @include background-photo();
+    height: 100vh;
 }
 
 .hero-header-dim-background {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.3);
     width:100%;
     height: 100vh;
     display: flex;
@@ -87,85 +84,72 @@ body {
 }
 
 .hero-header-box {
-    color: white;
+    color: $standard-background-color;
     border: none;
     text-align: center;
     line-height: 100%;
     width: 100%;
     padding: 20px;
-}
 
-.hero-header-text-bold {
-    font-size: 65px;
-    font-weight: 700;
-}
+    .hero-header-text-bold {
+        font-size: 4.0rem;
+        font-weight: 700;
+    }
 
-.hero-header-text-normal {
-    font-size: 65px;
-    font-weight: 300;
-}
+    .hero-header-text-normal {
+        font-size: 4.0rem;
+        font-weight: 300;
+    }
 
+    .hero-header-button-join-us {
+        background-color: $light-green-color;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 0.15rem;
+        font-size: 2.0rem;
+        font-weight: 700;
+        color: $standard-background-color;
+        padding: 20px;
+        width: 35%;
+        height: 20px;
+        display: inline-block;
+        margin: 0px;
+        @include hover-transition(background-color 1s, color 1s);
 
-.hero-header-button-join-us {
-    background-color: #00c4cc;
-    border: none;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 700;
-    color: #fff;
-    padding: 20px;
-    width: 35%;
-    height: 20px;
-    display: inline-block;
-    margin: 0px;
-    @include hover-transition("background-color 1s, color 1s")
+        &:hover {
+            @include swing-animation(swing 1s ease, 1);
+            color: $light-green-color;
+            background-color: $standard-background-color;
+        }
+    }
 
-}
+    .hero-header-button-more {
+        border: 2px solid $standard-background-color;
+        border-radius: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $standard-background-color;
+        padding: 20px;
+        width: 15%;
+        height: 15px;
+        display: inline-block;
+        @include hover-transition(background-color 1s, color 1s);
 
-.hero-header-button-join-us:hover {
-    -webkit-animation: swing 1s ease;
-    -moz-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    -moz-iteration-count: 1;
-    animation-iteration-count: 1;
-    color: #00c4cc;
-    background-color: #ffffff;
-}
+        &:hover {
+            @include swing-animation(swing 1s ease, 1);
+            background-color: $standard-background-color;
+            color: $light-green-color;
+        }
+    }
 
-.hero-header-button-more {
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-    padding: 20px;
-    width: 15%;
-    height: 15px;
-    display: inline-block;
-    -webkit-transition: background-color 1s, color 1s;
-    -moz-transition: background-color 1s, color 1s;
-    transition: background-color 1s, color 1s;
-}
-
-.hero-header-button-more:hover {
-    -webkit-animation: swing 1s ease;
-    -moz-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    -moz-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    background-color: #ffffff;
-    color: #00c4cc;
-}
-
-.hero-header-copy-text {
-    font-size: 25px;
-    line-height: 150%;
-    text-align: center;
+    .hero-header-copy-text {
+        font-size: 1.5rem;
+        line-height: 150%;
+        text-align: center;
+    }
 }
 
 /* ##########HERO-HEADER-END########## */
@@ -248,11 +232,8 @@ body {
 
 .main-body-background-photo {
     background-image: url(../img/background2.png);
+    @include background-photo();
     height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* ##########PRODUCT-EXTENDED-INFO-START########## */
@@ -300,114 +281,97 @@ body {
 
 .center-bottom-background-photo {
     background-image: url(../img/background3.jpg);
+    @include background-photo();
     height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* ##########FORM-NEWSLETTER-START########## */
 
 .newsletter-container {
-    background: #f5f5f5; /* For browsers that do not support gradients */
+    background-color: $standard-background-color;
     width: 100%;
     padding: 20px 0px 40px 0px;
+
+    .newsletter-box-flex {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+
+        .newsletter-img {
+            max-width: 100%;
+            padding: 0px 20px;
+        }
+
+        .newsletter-box-form {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 20px;
+            color: $standard-text-color;
+
+            form {
+                width: 100%;
+            }
+
+            h2 {
+                margin-top: 0px;
+                font-size: 2.0rem;
+            }
+
+            input {
+                width: 90%;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $standard-text-color;;
+                margin-bottom: 20px;
+                padding: 10px;
+                text-align: center;
+                color: $dark-green-color;
+                font-size: $standard-font-size;
+
+                &:placeholder-shown {
+                    text-align: center;
+                }
+
+                &::placeholder {
+                    color: $dark-green-color;
+                }
+            }
+
+            button {
+                margin: 10px 0px;
+                width: 90%;
+                background-color: $dark-green-color;
+                border: 2px solid $dark-green-color;
+                text-align: center;
+                text-decoration: none;
+                font-size: 2.0rem;
+                font-weight: 700;
+                color: $standard-background-color;
+                height: 50px;
+                @include hover-transition(background-color 1s, color 1s, border 1s);
+
+                &:hover {
+                    @include swing-animation(swing 1s ease, 1);
+                    color: $dark-green-color;
+                    background-color: $standard-background-color;
+                    border: 2px solid $dark-green-color;
+                }
+            }
+
+            p {
+                font-size: 0.6rem;
+            }
+        }
+    }
 }
-
-.newsletter-box-flex {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-
-}
-
-.newsletter-img {
-    height: 400px;
-    padding: 0px 20px;
-}
-
-.newsletter-box-form {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 20px;
-    color: #2f4f4f;
-}
-
-.newsletter-box-form form {
-    width: 100%;
-}
-
-.newsletter-box-form h1 {
-    margin-top: 0px;
-    font-size: 30px;
-}
-
-.newsletter-box-form form input {
-    width: 90%;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid #2f4f4f;;
-    margin-bottom: 20px;
-    padding: 10px;
-    text-align: center;
-    color: #108489;
-    font-size: 15px;
-}
-
-.newsletter-box-form input:placeholder-shown {
-    text-align: center;
-    font-size: 15px;
-}
-
-.newsletter-box-form input::placeholder {
-    color: #108489;
-}
-
-.newsletter-box-form button {
-    margin: 10px 0px;
-    width: 90%;
-    background-color: #108489;
-    border: 2px solid #108489;
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 700;
-    color: #fff;
-    height: 50px;
-    -webkit-transition: background-color 1s, color 1s, border 1s;
-    -moz-transition: background-color 1s, color 1s;
-    transition: background-color 1s, color 1s;
-
-}
-
-.newsletter-box-form button:hover {
-    -webkit-animation: swing 1s ease;
-    -moz-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    -moz-iteration-count: 1;
-    animation-iteration-count: 1;
-    color: #108489;
-    background-color: #f5f5f5;
-    border: 2px solid #108489;
-}
-
-.newsletter-box-form p {
-    font-size: 10px;
-}
-
 /* ##########FORM-NEWSLETTER-END########## */
 
 .bottom-background-photo {
     background-image: url(../img/background4.jpg);
+    @include background-photo();
     height: 500px;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* ##########ABOUT-US-START########## */
@@ -463,11 +427,8 @@ body {
 
 .footer-background-photo {
     background-image: url(../img/background5.jpg);
+    @include background-photo();
     height: 500px;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* ##########MAIN-SECTION-END########## */

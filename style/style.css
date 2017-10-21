@@ -6,7 +6,16 @@ body {
   height: 100%;
   margin: 0px;
   background-color: #f5f5f5;
-  font-family: 'Lato', sans-serif; }
+  font-family: "Lato", sans-serif;
+  font-size: 16px; }
+
+.anchor-fix {
+  display: block;
+  height: 100px;
+  /* this is the height of your header */
+  margin-top: -100px;
+  /* this is again negative value of the height of your header */
+  visibility: hidden; }
 
 /* ##########NAV-BAR-START########## */
 .header {
@@ -17,15 +26,7 @@ body {
   height: 60px;
   z-index: 1000; }
 
-.anchor-fix {
-  display: block;
-  height: 100px;
-  /* this is the height of your header */
-  margin-top: -100px;
-  /* this is again negative value of the height of your header */
-  visibility: hidden; }
-
-.menu-logo {
+.header-logo {
   float: left;
   position: absolute;
   margin: 10px 5px;
@@ -33,43 +34,42 @@ body {
 
 .nav {
   text-align: right; }
-  .nav li {
-    float: left; }
-    .nav li a {
-      display: block;
-      text-align: center;
-      width: 100px;
-      height: 20px;
-      padding: 10px;
-      margin: 10px 15px;
-      border-radius: 10px;
-      text-decoration: none;
-      color: #404154;
-      font-size: 16px;
-      -webkit-transition: background-color 1s;
-      -moz-transition: background-color 1s;
-      transition: background-color 1s; }
-      .nav li a:hover {
-        background-color: #00c4cc; }
-
-.menu {
-  display: inline-block;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px; }
+  .nav .menu {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px; }
+    .nav .menu li {
+      float: left; }
+      .nav .menu li a {
+        display: block;
+        text-align: center;
+        width: 100px;
+        height: 20px;
+        padding: 10px;
+        margin: 10px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #404154;
+        /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        transition: background-color 1s; }
+        .nav .menu li a:hover {
+          background-color: #00C4CC; }
 
 /* ##########NAV-BAR-END########## */
 /* ##########HERO-HEADER-START########## */
 .hero-header-background-photo {
   background-image: url(../img/background1.jpg);
-  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh; }
 
 .hero-header-dim-background {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -77,78 +77,74 @@ body {
   align-items: center; }
 
 .hero-header-box {
-  color: white;
+  color: #f5f5f5;
   border: none;
   text-align: center;
   line-height: 100%;
   width: 100%;
   padding: 20px; }
-
-.hero-header-text-bold {
-  font-size: 65px;
-  font-weight: 700; }
-
-.hero-header-text-normal {
-  font-size: 65px;
-  font-weight: 300; }
-
-.hero-header-button-join-us {
-  background-color: #00c4cc;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 30px;
-  font-weight: 700;
-  color: #fff;
-  padding: 20px;
-  width: 35%;
-  height: 20px;
-  display: inline-block;
-  margin: 0px;
-  -webkit-transition: "background-color 1s, color 1s";
-  -moz-transition: "background-color 1s, color 1s";
-  transition: "background-color 1s, color 1s"; }
-
-.hero-header-button-join-us:hover {
-  -webkit-animation: swing 1s ease;
-  -moz-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  -moz-iteration-count: 1;
-  animation-iteration-count: 1;
-  color: #00c4cc;
-  background-color: #ffffff; }
-
-.hero-header-button-more {
-  border: 2px solid #ffffff;
-  border-radius: 10px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  color: #fff;
-  padding: 20px;
-  width: 15%;
-  height: 15px;
-  display: inline-block;
-  -webkit-transition: background-color 1s, color 1s;
-  -moz-transition: background-color 1s, color 1s;
-  transition: background-color 1s, color 1s; }
-
-.hero-header-button-more:hover {
-  -webkit-animation: swing 1s ease;
-  -moz-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  background-color: #ffffff;
-  color: #00c4cc; }
-
-.hero-header-copy-text {
-  font-size: 25px;
-  line-height: 150%;
-  text-align: center; }
+  .hero-header-box .hero-header-text-bold {
+    font-size: 4.0rem;
+    font-weight: 700; }
+  .hero-header-box .hero-header-text-normal {
+    font-size: 4.0rem;
+    font-weight: 300; }
+  .hero-header-box .hero-header-button-join-us {
+    background-color: #00C4CC;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 0.15rem;
+    font-size: 2.0rem;
+    font-weight: 700;
+    color: #f5f5f5;
+    padding: 20px;
+    width: 35%;
+    height: 20px;
+    display: inline-block;
+    margin: 0px;
+    /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+    -webkit-transition: background-color 1s, color 1s;
+    -moz-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s; }
+    .hero-header-box .hero-header-button-join-us:hover {
+      -webkit-animation: swing 1s ease;
+      -moz-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      -moz-iteration-count: 1;
+      animation-iteration-count: 1;
+      color: #00C4CC;
+      background-color: #f5f5f5; }
+  .hero-header-box .hero-header-button-more {
+    border: 2px solid #f5f5f5;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+    padding: 20px;
+    width: 15%;
+    height: 15px;
+    display: inline-block;
+    /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+    -webkit-transition: background-color 1s, color 1s;
+    -moz-transition: background-color 1s, color 1s;
+    transition: background-color 1s, color 1s; }
+    .hero-header-box .hero-header-button-more:hover {
+      -webkit-animation: swing 1s ease;
+      -moz-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      -moz-iteration-count: 1;
+      animation-iteration-count: 1;
+      background-color: #f5f5f5;
+      color: #00C4CC; }
+  .hero-header-box .hero-header-copy-text {
+    font-size: 1.5rem;
+    line-height: 150%;
+    text-align: center; }
 
 /* ##########HERO-HEADER-END########## */
 /* ##########MAIN-SECTION-START########## */
@@ -222,23 +218,23 @@ body {
 /* ##########PRODUCT-EXTENDED-INFO-END########## */
 .main-body-background-photo {
   background-image: url(../img/background2.png);
-  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px; }
 
+/* ##########PRODUCT-EXTENDED-INFO-START########## */
+.here-should-be-extended-product-info {
+  width: 100%;
+  background-color: #f5f5f5; }
 
-
-.section-title {
+.jakto {
   font-size: 40px;
-  font-family: "Lato", sans-serif;
+  font-family: Lato;
   text-align: center;
   color: #108489;
-  font-weight: bold;
-  margin: 10px 0px 0px 0px;
-  padding: 8px; }
-
+  font-weight: bold; }
 
 .flex-container {
   font-size: 25px;
@@ -259,101 +255,92 @@ body {
   width: 20%;
   padding: 0px 20px; }
 
+.extended-product-info:hover {
+  color: #00c4cc; }
+
 /*!* ##########PRODUCT-EXTENDED-INFO-END########## *!*/
 .center-bottom-background-photo {
   background-image: url(../img/background3.jpg);
-  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px; }
 
 /* ##########FORM-NEWSLETTER-START########## */
 .newsletter-container {
-  background: #f5f5f5;
-  /* For browsers that do not support gradients */
+  background-color: #f5f5f5;
   width: 100%;
   padding: 20px 0px 40px 0px; }
-
-.newsletter-box-flex {
-  display: flex;
-  justify-content: center;
-  padding: 20px; }
-
-.newsletter-img {
-  height: 400px;
-  padding: 0px 20px; }
-
-.newsletter-box-form {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0px 20px;
-  color: #2f4f4f; }
-
-.newsletter-box-form form {
-  width: 100%; }
-
-.newsletter-box-form h1 {
-  margin-top: 0px;
-  font-size: 30px; }
-
-.newsletter-box-form form input {
-  width: 90%;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid #2f4f4f;
-  margin-bottom: 20px;
-  padding: 10px;
-  text-align: center;
-  color: #108489;
-  font-size: 15px; }
-
-.newsletter-box-form input:placeholder-shown {
-  text-align: center;
-  font-size: 15px; }
-
-.newsletter-box-form input::placeholder {
-  color: #108489; }
-
-.newsletter-box-form button {
-  margin: 10px 0px;
-  width: 90%;
-  background-color: #108489;
-  border: 2px solid #108489;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  font-weight: 700;
-  color: #fff;
-  height: 50px;
-  -webkit-transition: background-color 1s, color 1s, border 1s;
-  -moz-transition: background-color 1s, color 1s;
-  transition: background-color 1s, color 1s; }
-
-.newsletter-box-form button:hover {
-  -webkit-animation: swing 1s ease;
-  -moz-animation: swing 1s ease;
-  animation: swing 1s ease;
-  -webkit-animation-iteration-count: 1;
-  -moz-iteration-count: 1;
-  animation-iteration-count: 1;
-  color: #108489;
-  background-color: #f5f5f5;
-  border: 2px solid #108489; }
-
-.newsletter-box-form p {
-  font-size: 10px; }
+  .newsletter-container .newsletter-box-flex {
+    display: flex;
+    justify-content: center;
+    padding: 20px; }
+    .newsletter-container .newsletter-box-flex .newsletter-img {
+      max-width: 100%;
+      padding: 0px 20px; }
+    .newsletter-container .newsletter-box-flex .newsletter-box-form {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 20px;
+      color: #404154; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form form {
+        width: 100%; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
+        margin-top: 0px;
+        font-size: 2.0rem; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form input {
+        width: 90%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #404154;
+        margin-bottom: 20px;
+        padding: 10px;
+        text-align: center;
+        color: #108489;
+        font-size: 16px; }
+        .newsletter-container .newsletter-box-flex .newsletter-box-form input:placeholder-shown {
+          text-align: center; }
+        .newsletter-container .newsletter-box-flex .newsletter-box-form input::placeholder {
+          color: #108489; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form button {
+        margin: 10px 0px;
+        width: 90%;
+        background-color: #108489;
+        border: 2px solid #108489;
+        text-align: center;
+        text-decoration: none;
+        font-size: 2.0rem;
+        font-weight: 700;
+        color: #f5f5f5;
+        height: 50px;
+        /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+        -webkit-transition: background-color 1s, color 1s, border 1s;
+        -moz-transition: background-color 1s, color 1s, border 1s;
+        transition: background-color 1s, color 1s, border 1s; }
+        .newsletter-container .newsletter-box-flex .newsletter-box-form button:hover {
+          -webkit-animation: swing 1s ease;
+          -moz-animation: swing 1s ease;
+          animation: swing 1s ease;
+          -webkit-animation-iteration-count: 1;
+          -moz-iteration-count: 1;
+          animation-iteration-count: 1;
+          color: #108489;
+          background-color: #f5f5f5;
+          border: 2px solid #108489; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form p {
+        font-size: 0.6rem; }
 
 /* ##########FORM-NEWSLETTER-END########## */
 .bottom-background-photo {
   background-image: url(../img/background4.jpg);
-  height: 500px;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px; }
 
 /* ##########ABOUT-US-START########## */
 .about-us-section {
@@ -399,11 +386,11 @@ body {
 /* ##########ABOUT-US-END########## */
 .footer-background-photo {
   background-image: url(../img/background5.jpg);
-  height: 500px;
   background-attachment: fixed;
-  background-position: bottom;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  height: 500px; }
 
 /* ##########MAIN-SECTION-END########## */
 /* ##########FOOTER-START########## */
