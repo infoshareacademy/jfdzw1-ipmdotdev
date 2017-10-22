@@ -33,6 +33,14 @@ $dark-green-color: #108489;
   background-size: cover;
 }
 
+@mixin flex-display() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
 @mixin flex-wrap() {
   display: -webkit-flex;
   display: flex;
