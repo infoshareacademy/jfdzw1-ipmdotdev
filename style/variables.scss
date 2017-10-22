@@ -42,9 +42,11 @@ $dark-green-color: #108489;
 }
 
 @mixin flex-wrap() {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+display: flex;
+display: -webkit-flex;
+flex-flow: row wrap;
+-webkit-flex-flow: row wrap;
+justify-content: center;
+text-align: center;
 }
 /* ##########MIXINS-END########## */
