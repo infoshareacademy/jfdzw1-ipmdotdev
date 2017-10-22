@@ -44,7 +44,8 @@ body {
       .nav .menu li a {
         display: block;
         text-align: center;
-        width: 100px;
+        letter-spacing: 0.1rem;
+        width: 120px;
         height: 20px;
         padding: 10px;
         margin: 10px 15px;
