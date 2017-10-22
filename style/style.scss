@@ -383,7 +383,7 @@ body {
 }
 
 .about-us-flex-container {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #2f4f4f;
     display: flex;
     justify-content: center;
@@ -408,7 +408,7 @@ body {
 }
 
 .about-us-text {
-    font-size: 15px;
+    font-size: .9375rem;
     margin-bottom: 25px;
     text-align: justify;
     text-justify: inter-word;
@@ -416,12 +416,11 @@ body {
 
 .about-us-socials img {
     padding: 20px 10px 0px 10px;
-}
-
-.about-us-socials img:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
+    &:hover {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 }
 /* ##########ABOUT-US-END########## */
 
@@ -443,7 +442,7 @@ footer {
 }
 
 .section-title-white {
-    font-size: 30px;
+    font-size: 1.875rem;
     margin: 0px 0px 20px 0px;
     color: #f5f5f5;
 }
@@ -462,13 +461,12 @@ footer {
     -webkit-transition: 2s;
     -moz-transition: 2s;
     transition: 2s;
-}
-
-.footer-socials-logos:hover {
-    background-color: #00c4cc;
-    -webkit-transform: rotate(-360deg);
-    -moz-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+    &:hover {
+        background-color: #00c4cc;
+        -webkit-transform: rotate(-360deg);
+        -moz-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
 }
 
 .footer-menu {
@@ -476,140 +474,31 @@ footer {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-}
-
-.footer-menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-.footer-menu a {
-    display: block;
-    text-align: center;
-    padding: 10px 30px;
-    margin: 15px 10px 0px 10px;
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 15px;
-    border-radius: 10px;
-    -webkit-transition: background-color 1s;
-    -moz-transition: background-color 1s;
-    transition: background-color 1s;
-}
-
-.footer-menu a:hover {
-    background-color: #00c4cc;
+    li {
+        display: inline-block;
+        text-align: center;
+    }
+    a {
+        display: block;
+        text-align: center;
+        padding: 10px 30px;
+        margin: 15px 10px 0px 10px;
+        text-decoration: none;
+        color: #f5f5f5;
+        font-size: .9375rem;
+        border-radius: 10px;
+        -webkit-transition: background-color 1s;
+        -moz-transition: background-color 1s;
+        transition: background-color 1s;
+        &:hover {
+            background-color: #00c4cc;
+        }
+    }
 }
 
 .footer-copyright {
-    font-size: 10px;
+    font-size: .625rem;
     color: #f5f5f5;
-}
-/* ##########FOOTER-SECTION-END########## */
-
-/* ##########ANIMATIONS-START########## */
-
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-4px);
-        transform: translateX(-4px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-
-@-moz-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-4px);
-        transform: translateX(-4px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 }
 
 /* ##########ANIMATIONS-END########## */
