@@ -44,7 +44,8 @@ body {
       .nav .menu li a {
         display: block;
         text-align: center;
-        width: 100px;
+        letter-spacing: 0.1rem;
+        width: 120px;
         height: 20px;
         padding: 10px;
         margin: 10px 15px;
@@ -72,6 +73,10 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -273,6 +278,10 @@ body {
   width: 100%;
   padding: 20px 0px 40px 0px; }
   .newsletter-container .newsletter-box-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     padding: 20px; }
@@ -281,6 +290,10 @@ body {
       padding: 0px 20px; }
     .newsletter-container .newsletter-box-flex .newsletter-box-form {
       text-align: center;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
       display: flex;
       justify-content: center;
       align-items: center;
