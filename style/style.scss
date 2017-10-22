@@ -159,9 +159,7 @@ body {
 
 /* ##########SHORT PRODUCT-INFO-START########## */
 
-.short-product-info {
-    background-color: $standard-background-color;
-}
+
 
 .section-title {
     font-size: 40px;
@@ -173,20 +171,21 @@ body {
     padding: 8px;
 }
 
-.flex-container{
-    font-size: $standard-font-size;
+.flex-container {
+    font-size: 1.5rem;
     color: $standard-text-color;
-    @include flex-wrap();
-    weight: 100%
+    width: 100%;
+    @include flex-wrap ()
 }
-
-.item {
-    width: 30%;
-    height: 100%;
-    padding: 0px 60px 15px 90px;
-    text-align: center;
+.product-info {
+    width: 20%;
+    min-width: 350px;
+    padding: 20px 20px 80px 20px;
+    border: 20px;
 }
-
+.short-product-info {
+    background-color: $standard-background-color;
+}
 
 .product-info-text {
     font-size: $standard-font-size;
@@ -196,38 +195,21 @@ body {
     height: 50%;
 }
 
-/* ##########PRODUCT-SHORT-INFO-END########## */
-
-/* ##########PRODUCT-EXTENDED-INFO-START########## */
 .extended-product-info {
     width: 100%;
     background-color: $standard-background-color;
 }
 
-.big {
-    padding: 0 0 50px;
-    @include flex-wrap ();
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-content: space-between;
-    align-content: space-between;
-    text-align: center;
-    margin: 0;
-}
 .extended-product-info-text {
     font-size: $standard-font-size;
 }
-.product-info {
-    width: 30%;
-    min-width: 350px;
-    padding: 20px 20px 80px 20px;
-    border: 20px;
-}
+
 
 .extended-product-info-img {
     width: 50%;
     height: 50%;
 }
+
 
 /* ##########PRODUCT-EXTENDED-INFO-END########## */
 
@@ -237,48 +219,6 @@ body {
     height: 500px;
 }
 
-/* ##########PRODUCT-EXTENDED-INFO-START########## */
-
-.here-should-be-extended-product-info {
-    width: 100%;
-    background-color: #f5f5f5;
-}
-.jakto {
-    font-size: 40px;
-    font-family: Lato;
-    text-align: center;
-    color: #108489;
-    font-weight: bold;
-}
-
-.flex-container {
-    font-size: 25px;
-    color: #2f4f4f;
-    width: 100%;
-    font-size: 25px;
-    color: #2f4f4f;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    text-align: center;
-    }
-
-.extended-product-info-text {
-    font-size: 16px;
-
-}
-
-.flex-item {
-    width: 20%;
-    padding: 0px 20px;
-}
-
-.extended-product-info:hover {
-    color: #00c4cc;
-}
-
-/*!* ##########PRODUCT-EXTENDED-INFO-END########## *!*/
 
 .center-bottom-background-photo {
     background-image: url(../img/background3.jpg);
