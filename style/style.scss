@@ -414,7 +414,7 @@ body {
 }
 
 .about-us-text {
-  font-size: 15px;
+  font-size: $standard-font-size;
   margin-bottom: 25px;
   text-align: justify;
   text-justify: inter-word;
@@ -448,7 +448,7 @@ footer {
 }
 
 .section-title-white {
-  font-size: 30px;
+  font-size: 2rem;
   margin: 0px 0px 20px 0px;
   color: #f5f5f5;
 }
@@ -493,7 +493,7 @@ footer {
     margin: 15px 10px 0px 10px;
     text-decoration: none;
     color: #f5f5f5;
-    font-size: 15px;
+    font-size: $standard-font-size;
     border-radius: 10px;
     -webkit-transition: background-color 1s;
     -moz-transition: background-color 1s;
@@ -506,7 +506,7 @@ footer {
 }
 
 .footer-copyright {
-  font-size: 10px;
+  font-size: .0625rem;
   color: #f5f5f5;
 }
 
