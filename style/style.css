@@ -367,7 +367,7 @@ body {
 
 .about-us-flex-container {
   font-size: 1.25rem;
-  color: #2f4f4f;
+  color: #404154;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,7 +435,7 @@ footer {
   -moz-transition: 2s;
   transition: 2s; }
   .footer-socials-logos:hover {
-    background-color: #00c4cc;
+    background-color: #00C4CC;
     -webkit-transform: rotate(-360deg);
     -moz-transform: rotate(-360deg);
     transform: rotate(-360deg); }
@@ -462,7 +462,7 @@ footer {
     -moz-transition: background-color 1s;
     transition: background-color 1s; }
     .footer-menu a:hover {
-      background-color: #00c4cc; }
+      background-color: #00C4CC; }
 
 .footer-copyright {
   font-size: .0625rem;
