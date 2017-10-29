@@ -1,11 +1,16 @@
 @import "variables.scss";
 
-body {
+body, html {
     height:100%;
     margin: 0px;
     background-color: $standard-background-color;
     font-family: $standard-font;
+    color: $standard-text-color;
     font-size: $standard-font-size;
+}
+
+.parallax-mirror {
+    z-index: 1 !important;
 }
 
 .anchor-fix {
@@ -17,48 +22,47 @@ body {
 
 /* ##########NAV-BAR-START########## */
 
-.header {
-    width:100%;
-    background-color: $standard-background-color;
-    position: fixed;
-    height: 60px;
-    z-index: 1000;
+.navbar {
+    padding: 10px 0px;
+    letter-spacing: 0.05rem;
 
-    .header-logo {
-        float: left;
-        position: absolute;
-        margin: 10px 5px;
+    .navbar-logo {
         max-height: 40px;
+        margin-top: 5px;
     }
-}
 
-.nav {
-    text-align: right;
-
-    .menu {
-        display: inline-block;
-        list-style-type: none;
-        margin: 0px;
-        padding: 0px;
+    .navbar-nav {
 
         li {
-            float: left;
-
+            padding: 2px;
             a {
-                display: block;
-                text-align: center;
-                letter-spacing: 0.1rem;
-                width: 120px;
-                height: 20px;
-                padding: 10px;
-                margin: 10px 15px;
-                text-decoration: none;
-                color: $standard-text-color;
-                @include hover-transition(background-color 1s);
+                @include hover-transition(background-color 1s, color 1s);
                 &:hover {
-                    background-color: $light-green-color;
+                    background-color: $dark-green-color;
+                    color: $standard-background-color;
                 }
             }
+        }
+
+        li.active a {
+            background-color: $light-green-color;
+            @include hover-transition(background-color 1s, color 1s);
+
+            &:hover {
+                background-color: $dark-green-color;
+                color: $standard-background-color;
+            }
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .nav {
+            font-size: 0.8rem;
+        }
+
+        .navbar-logo {
+            max-height: 30px;
+            margin-top: 12px;
         }
     }
 }
@@ -68,35 +72,31 @@ body {
 /* ##########HERO-HEADER-START########## */
 
 .hero-header-background-photo {
-    background-image: url(../img/background1.jpg);
     @include background-photo();
     height: 100vh;
+    width: 100%;
 }
 
-.hero-header-dim-background {
-    background-color: rgba(0, 0, 0, 0.3);
-    width:100%;
-    height: 100vh;
-    @include flex-display();
-    justify-content: center;
+.flex-container {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .hero-header-box {
     color: $standard-background-color;
     border: none;
     text-align: center;
-    line-height: 100%;
-    width: 100%;
-    padding: 20px;
+    z-index: 2;
 
     .hero-header-text-bold {
-        font-size: 4.0rem;
+        font-size: 3.5rem;
         font-weight: 700;
     }
 
     .hero-header-text-normal {
-        font-size: 4.0rem;
+        font-size: 3.5rem;
         font-weight: 300;
     }
 
@@ -104,17 +104,15 @@ body {
         background-color: $light-green-color;
         border: none;
         border-radius: 10px;
-        text-align: center;
         text-decoration: none;
-        letter-spacing: 0.15rem;
+        letter-spacing: 0.1rem;
         font-size: 2.0rem;
         font-weight: 700;
         color: $standard-background-color;
-        padding: 20px;
-        width: 500px;
-        height: 20px;
+        width: 90%;
+        padding: 10px;
         display: inline-block;
-        margin: 0px;
+        margin: 10px 0px;
         @include hover-transition(background-color 1s, color 1s);
 
         &:hover {
@@ -124,22 +122,26 @@ body {
         }
     }
 
+    @media screen and (max-width: 1024px) {
+        .hero-header-button-join-us {
+
+        }
+    }
+
     .hero-header-copy-text {
         font-size: 1.5rem;
         line-height: 150%;
-        text-align: center;
     }
 
     .hero-header-button-more {
         border: 2px solid $standard-background-color;
         border-radius: 10px;
-        text-align: center;
         text-decoration: none;
         font-size: 1.5rem;
         color: $standard-background-color;
-        padding: 20px;
-        width: 250px;
-        height: 15px;
+        padding: 10px;
+        margin-top: 15px;
+        width: 80%;
         display: inline-block;
         @include hover-transition(background-color 1s, color 1s);
 
