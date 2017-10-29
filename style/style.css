@@ -292,8 +292,8 @@ body {
   padding: 20px 0px; }
 
 .about-us-flex-container {
-  font-size: 20px;
-  color: #2f4f4f;
+  font-size: 1.25rem;
+  color: #404154;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -313,18 +313,17 @@ body {
   margin-bottom: 0px; }
 
 .about-us-text {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 25px;
   text-align: justify;
   text-justify: inter-word; }
 
 .about-us-socials img {
   padding: 20px 10px 0px 10px; }
-
-.about-us-socials img:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2); }
+  .about-us-socials img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2); }
 
 /* ##########ABOUT-US-END########## */
 .footer-background-photo {
@@ -344,7 +343,7 @@ footer {
   padding: 20px 0px; }
 
 .section-title-white {
-  font-size: 30px;
+  font-size: 2rem;
   margin: 0px 0px 20px 0px;
   color: #f5f5f5; }
 
@@ -361,41 +360,38 @@ footer {
   -webkit-transition: 2s;
   -moz-transition: 2s;
   transition: 2s; }
-
-.footer-socials-logos:hover {
-  background-color: #00c4cc;
-  -webkit-transform: rotate(-360deg);
-  -moz-transform: rotate(-360deg);
-  transform: rotate(-360deg); }
+  .footer-socials-logos:hover {
+    background-color: #00C4CC;
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    transform: rotate(-360deg); }
 
 .footer-menu {
   width: 100%;
   list-style-type: none;
   margin: 0px;
   padding: 0px; }
-
-.footer-menu li {
-  display: inline-block;
-  text-align: center; }
-
-.footer-menu a {
-  display: block;
-  text-align: center;
-  padding: 10px 30px;
-  margin: 15px 10px 0px 10px;
-  text-decoration: none;
-  color: #f5f5f5;
-  font-size: 15px;
-  border-radius: 10px;
-  -webkit-transition: background-color 1s;
-  -moz-transition: background-color 1s;
-  transition: background-color 1s; }
-
-.footer-menu a:hover {
-  background-color: #00c4cc; }
+  .footer-menu li {
+    display: inline-block;
+    text-align: center; }
+  .footer-menu a {
+    display: block;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 15px 10px 0px 10px;
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 16px;
+    border-radius: 10px;
+    /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s; }
+    .footer-menu a:hover {
+      background-color: #00C4CC; }
 
 .footer-copyright {
-  font-size: 10px;
+  font-size: .0625rem;
   color: #f5f5f5; }
 
 /* ##########FOOTER-SECTION-END########## */
