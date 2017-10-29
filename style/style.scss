@@ -10,8 +10,8 @@ body {
 
 .anchor-fix {
     display:block;
-    height:100px; /* this is the height of your header */
-    margin-top:-100px; /* this is again negative value of the height of your header */
+    height:100px;
+    margin-top:-100px;
     visibility:hidden;
 }
 
@@ -20,17 +20,16 @@ body {
 .header {
     width:100%;
     background-color: $standard-background-color;
-    top: 0px;
     position: fixed;
     height: 60px;
     z-index: 1000;
-}
 
-.header-logo {
-    float: left;
-    position: absolute;
-    margin: 10px 5px;
-    max-height: 40px;
+    .header-logo {
+        float: left;
+        position: absolute;
+        margin: 10px 5px;
+        max-height: 40px;
+    }
 }
 
 .nav {
@@ -53,7 +52,6 @@ body {
                 height: 20px;
                 padding: 10px;
                 margin: 10px 15px;
-                border-radius: 10px;
                 text-decoration: none;
                 color: $standard-text-color;
                 @include hover-transition(background-color 1s);
@@ -113,7 +111,7 @@ body {
         font-weight: 700;
         color: $standard-background-color;
         padding: 20px;
-        width: 35%;
+        width: 500px;
         height: 20px;
         display: inline-block;
         margin: 0px;
@@ -126,6 +124,12 @@ body {
         }
     }
 
+    .hero-header-copy-text {
+        font-size: 1.5rem;
+        line-height: 150%;
+        text-align: center;
+    }
+
     .hero-header-button-more {
         border: 2px solid $standard-background-color;
         border-radius: 10px;
@@ -134,7 +138,7 @@ body {
         font-size: 1.5rem;
         color: $standard-background-color;
         padding: 20px;
-        width: 15%;
+        width: 250px;
         height: 15px;
         display: inline-block;
         @include hover-transition(background-color 1s, color 1s);
@@ -144,12 +148,6 @@ body {
             background-color: $standard-background-color;
             color: $light-green-color;
         }
-    }
-
-    .hero-header-copy-text {
-        font-size: 1.5rem;
-        line-height: 150%;
-        text-align: center;
     }
 }
 
