@@ -228,10 +228,14 @@ body, html {
     display: -webkit-flex;
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px; }
     .newsletter-container .newsletter-box-flex .newsletter-img {
       max-width: 100%;
       padding: 0px 20px; }
+    @media screen and (max-width: 992px) {
+      .newsletter-container .newsletter-box-flex .newsletter-box-img {
+        display: none; } }
     .newsletter-container .newsletter-box-flex .newsletter-box-form {
       text-align: center;
       display: -webkit-box;
@@ -248,6 +252,14 @@ body, html {
       .newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
         margin-top: 0px;
         font-size: 2.0rem; }
+        @media screen and (max-width: 500px) {
+          .newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
+            font-size: 1.75rem; } }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form h3 {
+        margin-bottom: 20px; }
+        @media screen and (max-width: 500px) {
+          .newsletter-container .newsletter-box-flex .newsletter-box-form h3 {
+            font-size: 1.25rem; } }
       .newsletter-container .newsletter-box-flex .newsletter-box-form input {
         width: 90%;
         background: transparent;
@@ -272,7 +284,7 @@ body, html {
         font-size: 2.0rem;
         font-weight: 700;
         color: #f5f5f5;
-        height: 50px;
+        height: 60px;
         /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
         -webkit-transition: background-color 1s, color 1s, border 1s;
         -moz-transition: background-color 1s, color 1s, border 1s;
