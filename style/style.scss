@@ -1,4 +1,5 @@
 @import "variables.scss";
+@import "animations.scss";
 
 body, html {
     height:100%;
@@ -254,14 +255,12 @@ body, html {
 /* ##########BOX PRODUCT-INFO-END########## */
 
 .main-body-background-photo {
-    background-image: url(../img/background2.png);
     @include background-photo();
     height: 500px;
 }
 
 
 .center-bottom-background-photo {
-    background-image: url(../img/background3.jpg);
     @include background-photo();
     height: 500px;
 }
@@ -370,7 +369,6 @@ body, html {
 /* ##########FORM-NEWSLETTER-END########## */
 
 .bottom-background-photo {
-    background-image: url(../img/background4.jpg);
     @include background-photo();
     height: 500px;
 }
@@ -427,7 +425,6 @@ body, html {
 /* ##########ABOUT-US-END########## */
 
 .footer-background-photo {
-    background-image: url(../img/background5.jpg);
     @include background-photo();
     height: 500px;
 }
@@ -505,109 +502,3 @@ footer {
 }
 /* ##########FOOTER-SECTION-END########## */
 
-/* ##########ANIMATIONS-START########## */
-
-@-webkit-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-4px);
-        transform: translateX(-4px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-
-@-moz-keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(8px);
-        transform: translateX(8px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-8px);
-        transform: translateX(-8px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(4px);
-        transform: translateX(4px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-4px);
-        transform: translateX(-4px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-@keyframes swing
-{
-    15%
-    {
-        -webkit-transform: translateX(5px);
-        transform: translateX(5px);
-    }
-    30%
-    {
-        -webkit-transform: translateX(-5px);
-        transform: translateX(-5px);
-    }
-    50%
-    {
-        -webkit-transform: translateX(3px);
-        transform: translateX(3px);
-    }
-    65%
-    {
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-    }
-    80%
-    {
-        -webkit-transform: translateX(2px);
-        transform: translateX(2px);
-    }
-    100%
-    {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
-}
-
-/* ##########ANIMATIONS-END########## */
