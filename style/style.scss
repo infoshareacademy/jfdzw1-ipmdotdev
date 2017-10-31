@@ -82,6 +82,10 @@ body, html {
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+
+    @media screen and (max-height: 480px) {
+        margin-top: 70px;
+    }
 }
 
 .hero-header-box {
@@ -91,28 +95,28 @@ body, html {
     z-index: 2;
 
     .hero-header-text-bold {
-        font-size: 3.5rem;
+        font-size: 3.25rem;
         font-weight: 700;
     }
 
     .hero-header-text-normal {
-        font-size: 3.5rem;
+        font-size: 3.25rem;
         font-weight: 300;
     }
 
     .hero-header-button-join-us {
         background-color: $light-green-color;
+        color: $standard-background-color;
+        display: inline-block;
         border: none;
         border-radius: 10px;
         text-decoration: none;
         letter-spacing: 0.1rem;
         font-size: 2.0rem;
         font-weight: 700;
-        color: $standard-background-color;
-        width: 90%;
         padding: 10px;
-        display: inline-block;
         margin: 10px 0px;
+        width: 80%;
         @include hover-transition(background-color 1s, color 1s);
 
         &:hover {
@@ -120,29 +124,30 @@ body, html {
             color: $light-green-color;
             background-color: $standard-background-color;
         }
-    }
 
-    @media screen and (max-width: 1024px) {
-        .hero-header-button-join-us {
-
+        @media screen and (max-width: 768px) {
+            width: 100%;
         }
     }
 
     .hero-header-copy-text {
-        font-size: 1.5rem;
-        line-height: 150%;
+        font-size: 1.25rem;
+
+        @media screen and (max-height: 480px) {
+            display: none;
+        }
     }
 
     .hero-header-button-more {
         border: 2px solid $standard-background-color;
         border-radius: 10px;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         color: $standard-background-color;
         padding: 10px;
         margin-top: 15px;
-        width: 80%;
         display: inline-block;
+        width: 80%;
         @include hover-transition(background-color 1s, color 1s);
 
         &:hover {
@@ -150,8 +155,57 @@ body, html {
             background-color: $standard-background-color;
             color: $light-green-color;
         }
+
+        @media screen and (max-width: 768px) {
+            width: 60%;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .hero-header-text-bold {
+            font-size: 2.5rem;
+        }
+
+        .hero-header-text-normal {
+            font-size: 2.5rem;
+        }
+
+        .hero-header-button-join-us {
+            font-size: 1.75rem;
+        }
+
+        .hero-header-copy-text {
+            font-size: 1.0rem;
+        }
+
+        .hero-header-button-more {
+            font-size: 1.0rem;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .hero-header-text-bold {
+            font-size: 2rem;
+        }
+
+        .hero-header-text-normal {
+            font-size: 2rem;
+        }
+
+        .hero-header-button-join-us {
+            font-size: 1.5rem;
+        }
+
+        .hero-header-copy-text {
+            font-size: 1.0rem;
+        }
+
+        .hero-header-button-more {
+            font-size: 1.0rem;
+        }
     }
 }
+
 
 /* ##########HERO-HEADER-END########## */
 
