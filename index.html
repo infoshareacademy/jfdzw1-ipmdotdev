@@ -1,20 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
     <head>
         <meta charset="UTF-8"/>
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
         <meta name="description" content="Platforma, która odmieni Twoje życie!"/>
         <meta name="keyword" content="wyzwania, challange"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Switcheroo - podejmij wyzwanie!</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
         <link rel="stylesheet" href="style/style.css"/>
     </head>
-    <body>
-        <div class="hero-header-background-photo" id="home-page">
-            <div class="header">
-                <a href="#home-page"><img class="header-logo" src="img/switcheroo-logo.png" alt="Switcheroo - tekstowe logo"/></a>
-                <div class="nav">
-                    <ul class="menu">
+    <body id="home-page" data-spy="scroll" data-target=".navbar" data-offset="60">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="navbar-logo" src="img/switcheroo-logo.png" alt="Switcheroo - tekstowe logo"/>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#home-page">Strona główna</a></li>
                         <li><a href="#how-it-works">Jak to działa?</a></li>
                         <li><a href="#enter-the-game">Wejdź do gry</a></li>
                         <li><a href="#meet-us">Poznaj nas</a></li>
@@ -22,20 +31,33 @@
                     </ul>
                 </div>
             </div>
-            <div class="hero-header-dim-background">
-                <div class="hero-header-box">
-                    <div>
-                        <p class="hero-header-text-bold">Podejmij wyzwanie</p>
-                        <p class="hero-header-text-normal">zacznij żyć na 110%</p>
+        </nav>
+        <div class="hero-header-background-photo flex-container" data-parallax="scroll" data-image-src="img/background1.jpg">
+            <div class="container hero-header-box">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <span class="hero-header-text-bold">Podejmij wyzwanie</span><br/>
+                        <span class="hero-header-text-normal">zacznij żyć na 110%</span>
                     </div>
-                    <div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
                         <a href="#enter-the-game" class="hero-header-button-join-us">Dołącz do nas</a>
                     </div>
-                    <div>
-                        <p class="hero-header-copy-text"><strong>Nie bądź pionkiem - zostań graczem.<br>Wyznacz swoje cele i zmień swoje życie.<br>
-                            Realizuj się, rozwijaj pasje i szukaj nowych wyzwań!</strong></p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <span class="hero-header-copy-text">Nie bądź pionkiem - zostań graczem!</span>
                     </div>
-                    <div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <span class="hero-header-copy-text">Wyznacz sobie cele i zmień swoje życie!</span>
+                    </div>
+                    <div class="col-sm-6 col-sm-offset-3 text-center">
+                        <span class="hero-header-copy-text">Rozwijaj pasje i szukaj nowych wyzwań!</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-sm-offset-4 text-center">
                         <a href="#how-it-works" class="hero-header-button-more">Dowiedz się więcej</a>
                     </div>
                 </div>
@@ -63,7 +85,7 @@
             </div>
         </div>
 
-        <div class="main-body-background-photo"></div>
+        <div class="main-body-background-photo" data-parallax="scroll" data-image-src="img/background2.png"></div>
         <span class="anchor-fix" id="how-it-works"></span>
         <div class="box-product-info">
             <h2 class="section-title">Jak to działa?</h2>
@@ -90,11 +112,11 @@
                 </div>-->
             </div>
         </div>
-        <div class="center-bottom-background-photo"></div>
+        <div class="center-bottom-background-photo" data-parallax="scroll" data-image-src="img/background3.jpg"></div>
         <span class="anchor-fix" id="enter-the-game"></span>
         <div class="newsletter-container">
-            <h2 class="section-title">Bądź na bieżąco!</h2>
-            <div class="newsletter-box-flex">
+            <h2 class="section-title slideanim">Bądź na bieżąco!</h2>
+            <div class="newsletter-box-flex slideanim">
                 <div class="newsletter-box-img">
                     <img class="newsletter-img" src="img/man-in-space.jpg" alt="człowiek stojący na księżycu z flagą"/>
                 </div>
@@ -111,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="bottom-background-photo"></div>
+        <div class="bottom-background-photo" data-parallax="scroll" data-image-src="img/background4.jpg"></div>
         <span class="anchor-fix" id="meet-us"></span>
         <div class ="about-us-section">
             <h2 class="section-title">Tworzymy tę aplikację, bo sami jej potrzebujemy!</h2>
@@ -149,7 +171,7 @@
 
             </div>
         </div>
-        <div class="footer-background-photo"></div>
+        <div class="footer-background-photo" data-parallax="scroll" data-image-src="img/background5.jpg"></div>
         <footer id="contact">
             <h2 class="section-title-white">Śledź nas na mediach społecznościowych!</h2>
             <div class="footer-socials">
@@ -170,5 +192,8 @@
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!-- PARALLAX EFFECT -->
+        <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+        <script src="js/scroll_animations.js" type="text/javascript"></script>
     </body>
 </html>
