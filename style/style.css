@@ -344,7 +344,8 @@ footer {
 .footer-socials {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  flex-wrap: wrap; }
 
 .footer-socials-logos {
   padding: 10px;
