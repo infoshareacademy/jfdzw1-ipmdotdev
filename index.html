@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
         <meta name="description" content="Platforma, która odmieni Twoje życie!"/>
         <meta name="keyword" content="wyzwania, challange"/>
+        <meta name=“viewport” content=“width=device-width, initial-scale=1”>
         <title>Switcheroo - podejmij wyzwanie!</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
         <link rel="stylesheet" href="style/style.css"/>
@@ -113,10 +114,11 @@
         </div>
         <div class="bottom-background-photo"></div>
         <span class="anchor-fix" id="meet-us"></span>
-        <div class ="about-us-section">
+        <div class = container-fluid>
+        <div class ="row about-us-section">
             <h2 class="section-title">Tworzymy tę aplikację, bo sami jej potrzebujemy!</h2>
-            <div class="about-us-flex-container">
-                <div class="about-us-member">
+
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-ilona.jpeg"/><h3>Ilona Kondrat</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -126,7 +128,7 @@
                         <a href="mailto:ilona.kondrat@gmail.com"><img src="img/about-us-gmail.png" alt="gmail logo"/></a>
                     </div>
                 </div>
-                <div class="about-us-member">
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-michal.jpg"/><h3>Michał Burzyński</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -136,7 +138,7 @@
                         <a href="mailto:burzyk.mb@gmail.com"><img src="img/about-us-gmail.png" alt="gmail logo"/></a>
                     </div>
                 </div>
-                <div class="about-us-member">
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-pit.jpg"/><h3>Piotr Tryfon</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -147,12 +149,12 @@
                     </div>
                 </div>
 
-            </div>
+        </div>
         </div>
         <div class="footer-background-photo"></div>
         <footer id="contact">
             <h2 class="section-title-white">Śledź nas na mediach społecznościowych!</h2>
-            <div class="footer-socials">
+            <div class="row footer-socials">
                 <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-facebook.png" alt="facebook logo"/></a></div>
                 <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-youtube.png" alt="youtube logo"/></a></div>
                 <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-snapchat.png" alt="snapchat logo"/></a></div>

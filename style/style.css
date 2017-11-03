@@ -288,22 +288,16 @@ body {
 /* ##########ABOUT-US-START########## */
 .about-us-section {
   background: #f5f5f5;
-  width: 100%;
+  /*
+  width: 100%;*/
   padding: 20px 0px; }
-
-.about-us-flex-container {
-  font-size: 1.25rem;
-  color: #404154;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
 
 .about-us-member {
   margin-top: 20px;
   text-align: center;
+  /*
   width: 20%;
-  padding: 0px 60px 30px 60px; }
+  padding: 0px 60px 30px 60px;*/ }
 
 .about-us-img {
   margin: 20px 20px 0px 20px;
