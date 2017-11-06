@@ -305,8 +305,6 @@ body {
 
 .about-us-section {
     background: $standard-background-color;
-    /*
-    width: 100%;*/
     padding: 20px 0px;
 }
 
@@ -315,9 +313,7 @@ body {
 .about-us-member {
     margin-top: 20px;
     text-align: center;
-    /*
-    width: 20%;
-    padding: 0px 60px 30px 60px;*/
+
 }
 
 .about-us-img {
@@ -335,6 +331,8 @@ body {
     margin-bottom: 25px;
     text-align: justify;
     text-justify: inter-word;
+    padding: 0 25px;
+
 }
 
 .about-us-socials img {
@@ -389,43 +387,16 @@ footer {
         transform: rotate(-360deg);
     }
 }
-/*
-.footer-menu {
-    width: 100%;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
 
-    li {
-        display: inline-block;
-        text-align: center;
-    }
-
-    a {
-        display: block;
-        text-align: center;
-        padding: 10px 30px;
-        margin: 15px 10px 0px 10px;
-        text-decoration: none;
-        color: $standard-background-color;
-        font-size: $standard-font-size;
-        border-radius: 10px;
-        @include hover-transition(background-color 1s);
-
-        &:hover {
-            background-color: $light-green-color;
-        }
-    }
-}
-*/
 .footer-menu {
     width: 100%;
     background-color: #108489;
-}
-a {
-    &:hover {
-        text-decoration: none;
 
+    a {
+        &:hover {
+            text-decoration: none;
+
+        }
     }
 }
 .footer-menu-list {
@@ -443,8 +414,9 @@ a {
     }
 }
 .footer-copyright {
-    font-size: .0625rem;
+    font-size: 1.2rem;
     color: $standard-background-color;
+    margin-top: 10px;
 }
 /* ##########FOOTER-SECTION-END########## */
 
