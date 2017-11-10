@@ -377,24 +377,15 @@ body, html {
 
 .about-us-section {
     background: $standard-background-color;
-    width: 100%;
     padding: 20px 0px;
 }
 
-.about-us-flex-container {
-    font-size: 1.25rem;
-    color: $standard-text-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 
 .about-us-member {
     margin-top: 20px;
     text-align: center;
-    width: 20%;
-    padding: 0px 60px 30px 60px;
+
 }
 
 .about-us-img {
@@ -412,6 +403,8 @@ body, html {
     margin-bottom: 25px;
     text-align: justify;
     text-justify: inter-word;
+    padding: 0 25px;
+
 }
 
 .about-us-socials img {
@@ -422,6 +415,7 @@ body, html {
         transform: scale(1.2);
     }
 }
+
 /* ##########ABOUT-US-END########## */
 
 .footer-background-photo {
@@ -446,16 +440,14 @@ footer {
     color: $standard-background-color;
 }
 
-.footer-socials {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
+
 
 .footer-socials-logos {
+    display: inline-block;
     padding: 10px;
+    max-width: 85px;
+    margin: 10px auto;
     background-color: $standard-background-color;
-    margin: 0px 20px;
     border-radius: 20px;
     -webkit-transition: 2s;
     -moz-transition: 2s;
@@ -470,35 +462,34 @@ footer {
 
 .footer-menu {
     width: 100%;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-
-    li {
-        display: inline-block;
-        text-align: center;
-    }
+    background-color: #108489;
 
     a {
-        display: block;
-        text-align: center;
-        padding: 10px 30px;
-        margin: 15px 10px 0px 10px;
-        text-decoration: none;
-        color: $standard-background-color;
-        font-size: $standard-font-size;
-        border-radius: 10px;
-        @include hover-transition(background-color 1s);
-
         &:hover {
-            background-color: $light-green-color;
+            text-decoration: none;
+
         }
     }
 }
-
-.footer-copyright {
-    font-size: .0625rem;
+.footer-menu-list {
+    height: 40px;
+    padding: 5px;
     color: $standard-background-color;
+    font-size: 1.5rem;
+    background-color: #108489;
+    text-align: center;
+    border-radius: 10px;
+    @include hover-transition(background-color 1s);
+    &:hover {
+        background-color: $light-green-color;
+
+    }
 }
+.footer-copyright {
+    font-size: 1rem;
+    color: $standard-background-color;
+    margin-top: 15px;
+}
+
 /* ##########FOOTER-SECTION-END########## */
 

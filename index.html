@@ -135,10 +135,11 @@
         </div>
         <div class="bottom-background-photo" data-parallax="scroll" data-image-src="img/background4.jpg"></div>
         <span class="anchor-fix" id="meet-us"></span>
-        <div class ="about-us-section">
+        <div class="container">
+        <div class ="row about-us-section">
             <h2 class="section-title">Tworzymy tę aplikację, bo sami jej potrzebujemy!</h2>
-            <div class="about-us-flex-container">
-                <div class="about-us-member">
+
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-ilona.jpeg"/><h3>Ilona Kondrat</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -148,7 +149,7 @@
                         <a href="mailto:ilona.kondrat@gmail.com"><img src="img/about-us-gmail.png" alt="gmail logo"/></a>
                     </div>
                 </div>
-                <div class="about-us-member">
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-michal.jpg"/><h3>Michał Burzyński</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -158,7 +159,7 @@
                         <a href="mailto:burzyk.mb@gmail.com"><img src="img/about-us-gmail.png" alt="gmail logo"/></a>
                     </div>
                 </div>
-                <div class="about-us-member">
+                <div class="col-sm-4 about-us-member">
                     <img class="about-us-img" src="img/about-us-pit.jpg"/><h3>Piotr Tryfon</h3>
                     <p class="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam diam ligula, scelerisque et elementum ac, feugiat vel mi.</p>
                     <div class="about-us-socials">
@@ -169,27 +170,62 @@
                     </div>
                 </div>
 
-            </div>
+
+        </div>
         </div>
         <div class="footer-background-photo" data-parallax="scroll" data-image-src="img/background5.jpg"></div>
+
         <footer id="contact">
             <h2 class="section-title-white">Śledź nas na mediach społecznościowych!</h2>
-            <div class="footer-socials">
-                <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-facebook.png" alt="facebook logo"/></a></div>
-                <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-youtube.png" alt="youtube logo"/></a></div>
-                <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-snapchat.png" alt="snapchat logo"/></a></div>
-                <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-twitter.png" alt="twitter logo"/></a></div>
-                <div class="footer-socials-logos"><a href="#" target="_blank"><img src="img/footer-socials-instagram.png" alt="instagram logo"/></a></div>
-            </div>
+<div class="container">
+
+    <div class="row footer-socials">
+        <div class="col-sm-2 col-sm-offset-1 col-xs-4 text-center">
+            <a class=" footer-socials-logos" href="#" target="_blank"><img src="img/footer-socials-facebook.png"
+                                                                           alt="facebook logo"/></a>
+        </div>
+        <div class="col-sm-2 col-xs-4 text-center">
+            <a class="footer-socials-logos" href="#" target="_blank"><img src="img/footer-socials-youtube.png"
+                                                                          alt="youtube logo"/></a>
+        </div>
+        <div class="col-sm-2 col-xs-4 text-center">
+            <a class="footer-socials-logos" href="#" target="_blank"><img src="img/footer-socials-snapchat.png"
+                                                                          alt="snapchat logo"/></a>
+        </div>
+        <div class="col-sm-2 col-sm-offset-0 col-xs-4 col-xs-offset-2 text-center">
+            <a class="footer-socials-logos" href="#" target="_blank"><img src="img/footer-socials-twitter.png"
+                                                                          alt="twitter logo"/></a>
+        </div>
+        <div class="col-sm-2 col-xs-4 text-center">
+            <a class="footer-socials-logos" href="#" target="_blank"><img
+                    src="img/footer-socials-instagram.png" alt="instagram logo"/></a>
+        </div>
+
+    </div>
+
+</div>
             <hr/>
-            <ul class="footer-menu">
-                <li><a href="#how-it-works">Jak to działa?</a></li>
-                <li><a href="#enter-the-game">Wejdź do gry</a></li>
-                <li><a href="#meet-us">Poznaj nas</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
+
+            <div class="container">
+                <div class="row footer-menu">
+                    <a href="#how-it-works">
+                        <div class="col-sm-3 footer-menu-list">Jak to działa?</div>
+                    </a>
+                    <a href="#enter-the-game">
+                        <div class="col-sm-3 footer-menu-list">Wejdź do gry</div>
+                    </a>
+                    <a href="#meet-us">
+                        <div class="col-sm-3 footer-menu-list">Poznaj nas</div>
+                    </a>
+                    <a href="#contact">
+                        <div class="col-sm-3 footer-menu-list">Kontakt</div>
+                    </a>
+                </div>
+            </div>
             <p class="footer-copyright">IPM.dev copyright 2017®</p>
         </footer>
+
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- PARALLAX EFFECT -->
