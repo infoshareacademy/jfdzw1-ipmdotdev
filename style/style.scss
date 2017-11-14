@@ -380,33 +380,26 @@ body, html {
     padding: 20px 0px;
 }
 
-
-
 .about-us-member {
     margin-top: 20px;
     text-align: center;
 
 }
-
 .about-us-img {
     margin: 20px 20px 0px 20px;
     border-radius: 50%;
 
 }
-
 .about-us-member h3 {
     margin-bottom: 0px;
 }
-
 .about-us-text {
     font-size: $standard-font-size;
     margin-bottom: 25px;
     text-align: justify;
     text-justify: inter-word;
     padding: 0 25px;
-
 }
-
 .about-us-socials img {
     padding: 20px 10px 0px 10px;
     &:hover {
@@ -433,15 +426,11 @@ footer {
     text-align: center;
     padding: 20px 0px;
 }
-
 .section-title-white {
     font-size: 2rem;
     margin: 0px 0px 20px 0px;
     color: $standard-background-color;
 }
-
-
-
 .footer-socials-logos {
     display: inline-block;
     padding: 10px;
@@ -459,7 +448,6 @@ footer {
         transform: rotate(-360deg);
     }
 }
-
 .footer-menu {
     width: 100%;
     background-color: #108489;
@@ -482,7 +470,6 @@ footer {
     @include hover-transition(background-color 1s);
     &:hover {
         background-color: $light-green-color;
-
     }
 }
 .footer-copyright {
