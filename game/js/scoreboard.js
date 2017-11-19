@@ -2,25 +2,22 @@ var scoreboard = [];
 
 function initScoreboard() {
 
-};
+}
 
 function createPlayer(name, score) {
-var player = {
+  var player = {
     name: name,
     score: score
+  }
+
+  return player;
+
 }
-
-return player;
-
-}
-
-
-
 
 function insertPlayer() {
 
-};
+}
 
 function getResults() {
 
-};
+}
