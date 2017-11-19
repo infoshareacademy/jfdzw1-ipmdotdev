@@ -1,7 +1,13 @@
 var scoreboard = [];
 
 function initScoreboard() {
-
+    if (scoreboard.length === 0){
+        scoreboard.push(createPlayer("pit", 1000));
+        scoreboard.push(createPlayer("hsh", 800));
+        scoreboard.push(createPlayer("khy", 690));
+        scoreboard.push(createPlayer("kiy", 300));
+        scoreboard.push(createPlayer("kiny", 180));
+    }
 }
 
 function createPlayer(name, score) {
@@ -14,7 +20,14 @@ function createPlayer(name, score) {
 
 }
 
-function insertPlayer() {
+function insertPlayer(player) {
+    for (var i=0; i<5; i++){
+        if (player.score >= scoreboard[i].score){
+            scoreboard.splice(i, 0, player);
+            scoreboard.pop();
+            break
+        }
+    }
 
 }
 
