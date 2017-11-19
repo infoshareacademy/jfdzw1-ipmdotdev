@@ -19,5 +19,8 @@ function insertPlayer() {
 }
 
 function getResults() {
+    var results = scoreboard.slice(0);
+    return results;
+
 
 }
