@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style/style.css"/>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -12,22 +13,55 @@
 <div class="container">
     <div class="game-menu">
         <button type="button" class="btn btn-default navbar-btn">Help</button>
-        <button type="button" class="btn btn-default navbar-btn">Best Scores</button>
+        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Best Scores</button>
         <p class="navbar-text">Imię Gracza</p>
         <p class="navbar-text">Wynik</p>
     </div>
+
+
+
+
     <div class="game-board">
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Ranking</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table" id="ranking">
+                        <thead>
+                        <tr>
+                            <th>Pozycja</th>
+                            <th>Name</th>
+                            <th>score</th>
+                        </tr>
+                        </thead>
+                        <tbody id="modalBody">
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 </body>
-<script>
-        src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/scoreboard.js"></script>
 <script src="js/game.js"></script>
 <script>sample();</script>
 <script>initGame();</script>
 </html>
+
