@@ -1,5 +1,11 @@
 var scoreboard = [];
 
+function PlayerClass(_name, _score){
+    this.name = _name;
+    this.score = _score;
+}
+
+
 function initScoreboard() {
     if (scoreboard.length === 0){
         scoreboard.push(createPlayer("pit", 1000));
