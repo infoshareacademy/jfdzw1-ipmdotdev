@@ -22,7 +22,7 @@ function createPlayer(name, score) {
 
 function insertPlayer(player) {
     for (var i=0; i<5; i++) {
-        if (player.score >= scoreboard[i].score) {
+        if (player.score > scoreboard[i].score) {
             scoreboard.splice(i, 0, player);
             scoreboard.pop();
             break;
