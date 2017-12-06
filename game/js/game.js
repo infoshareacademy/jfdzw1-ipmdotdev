@@ -29,6 +29,39 @@ $(document).ready(function () {
   }
 
 
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+                $('#ludek').animate({
+                    'marginLeft': '-=30px'
+                });
+                break;
+
+            case 38: // up
+                $('#ludek').animate({
+                    'marginTop': '-=30px'
+                });
+                break;
+
+            case 39: // right
+                $('#ludek').animate({
+                    'marginLeft': '+=30px'
+                });
+                break;
+
+            case 40: // down
+                $('#ludek').animate({
+                    'marginTop': '+=30px'
+                });
+                break;
+
+            default: return;
+        }
+        e.preventDefault();
+    });
+
+
+
   function initGame() {
     moveBackground();
   }
