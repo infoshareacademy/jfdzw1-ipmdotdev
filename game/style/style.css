@@ -12,10 +12,10 @@ body {
     background-image: url("../img/game_bg.png");
     background-repeat: repeat-y; }
 
-#ludek {
+#stick-man {
   width: 30px;
   height: 30px;
-  background-color: red;
+  background-color: #FF0000;
   position: absolute;
   padding: 10px;
   border-radius: 5px;

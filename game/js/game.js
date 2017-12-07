@@ -32,26 +32,26 @@ $(document).ready(function () {
     $(document).keydown(function(e) {
         switch(e.which) {
             case 37: // left
-                $('#ludek').animate({
-                    'marginLeft': '-=30px'
+                $('#stick-man').animate({
+                    'marginLeft': '-=55px'
                 });
                 break;
 
             case 38: // up
-                $('#ludek').animate({
-                    'marginTop': '-=30px'
+                $('#stick-man').animate({
+                    'marginTop': '-=55px'
                 });
                 break;
 
             case 39: // right
-                $('#ludek').animate({
-                    'marginLeft': '+=30px'
+                $('#stick-man').animate({
+                    'marginLeft': '+=55px'
                 });
                 break;
 
             case 40: // down
-                $('#ludek').animate({
-                    'marginTop': '+=30px'
+                $('#stick-man').animate({
+                    'marginTop': '+=55px'
                 });
                 break;
 
