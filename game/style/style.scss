@@ -16,3 +16,14 @@ body {
     background-repeat: repeat-y;
   }
 }
+
+  #stick-man {
+    width: 30px;
+    height: 30px;
+    background-color: #FF0000;
+    position:absolute;
+    padding:10px;
+    border-radius: 5px;
+    top:400px;
+    left: 250px;
+}

@@ -29,6 +29,39 @@ $(document).ready(function () {
   }
 
 
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 37: // left
+                $('#stick-man').animate({
+                    'marginLeft': '-=55px'
+                });
+                break;
+
+            case 38: // up
+                $('#stick-man').animate({
+                    'marginTop': '-=55px'
+                });
+                break;
+
+            case 39: // right
+                $('#stick-man').animate({
+                    'marginLeft': '+=55px'
+                });
+                break;
+
+            case 40: // down
+                $('#stick-man').animate({
+                    'marginTop': '+=55px'
+                });
+                break;
+
+            default: return;
+        }
+        e.preventDefault();
+    });
+
+
+
   function initGame() {
     moveBackground();
   }
