@@ -10,15 +10,19 @@ body {
     height: 495px;
     width: 495px;
     background-image: url("../img/game_bg.png");
-    background-repeat: repeat-y; }
-
-#stick-man {
-  width: 55px;
-  height: 55px;
-  background-color: #FF0000;
-  border-radius: 5px;
-  top: 440px;
-  left: 220px;
-  position: relative; }
+    background-repeat: repeat-y;
+    overflow: hidden; }
+    body .game-board #stick-man {
+      width: 55px;
+      height: 55px;
+      background-image: url("../img/hero.png");
+      border-radius: 5px;
+      top: 440px;
+      left: 220px;
+      position: relative; }
+    body .game-board .obstacle {
+      position: absolute;
+      background-image: url("../img/obstacle_bg.jpg");
+      overflow: hidden; }
 
 /*# sourceMappingURL=style.css.map */

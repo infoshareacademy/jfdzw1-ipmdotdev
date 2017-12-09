@@ -14,15 +14,24 @@ body {
     width: 495px;
     background-image: url('../img/game_bg.png');
     background-repeat: repeat-y;
+    overflow: hidden;
+
+    #stick-man {
+      width: 55px;
+      height: 55px;
+      background-image: url('../img/hero.png');
+      border-radius: 5px;
+      top:440px;
+      left: 220px;
+      position: relative;
+    }
+
+    .obstacle {
+      position: absolute;
+      background-image: url('../img/obstacle_bg.jpg');
+      overflow: hidden;
+    }
   }
 }
 
-  #stick-man {
-    width: 55px;
-    height: 55px;
-    background-color: #FF0000;
-    border-radius: 5px;
-    top:440px;
-    left: 220px;
-    position: relative;
-}
+
