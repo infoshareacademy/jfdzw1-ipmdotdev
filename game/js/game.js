@@ -35,25 +35,25 @@ $(document).ready(function () {
         switch(e.which) {
             case 37: // left
                 $('#stick-man').stop().animate({
-                    'marginLeft': `-=${spotSize}px`
+                    'left': `-=${spotSize}px`
                 });
                 break;
 
             case 38: // up
                 $('#stick-man').stop().animate({
-                    'marginTop': `-=${spotSize}px`
+                    'top': `-=${spotSize}px`
                 });
                 break;
 
             case 39: // right
                 $('#stick-man').stop().animate({
-                    'marginLeft': `+=${spotSize}px`
+                    'left': `+=${spotSize}px`
                 });
                 break;
 
             case 40: // down
                 $('#stick-man').stop().animate({
-                    'marginTop': `+=${spotSize}px`
+                    'top': `+=${spotSize}px`
                 });
                 break;
 
@@ -75,11 +75,12 @@ $(document).ready(function () {
       'top': `${this.top}px`, 'left': `${this.x}px`, 'width': `${this.width}px`, 'height': `${this.height}px`
     }).appendTo($('.game-board'));
     this.startMoving();
-  }
+  };
 
   Obstacle.prototype.startMoving = function () {
     let that = this;
     setInterval(function () {
+
       let newTop = parseInt(that.$elem.css('top')) + 1;
       that.$elem.css('top', `${newTop}px`);
 
@@ -87,12 +88,39 @@ $(document).ready(function () {
         that.$elem.remove();
       }
     }, 20);
-  }
+  };
+
+  Obstacle.prototype.checkCollision = function (stickman) {
+      let stickmanX = parseInt(stickman.css('left').slice(0, -2));
+      let stickmanY = parseInt(stickman.css('top').slice(0, -2));
+      let obstacleX = parseInt(this.$elem.css('left').slice(0, -2));
+      let obstacleY = parseInt(this.$elem.css('top').slice(0, -2));
+      let stickmanWidth = 55;
+      let stickmanHeight = 55;
+
+      return obstacleX < stickmanX + stickmanWidth &&
+          obstacleX + this.width > stickmanX &&
+          obstacleY < stickmanY + stickmanHeight &&
+         this.height + obstacleY > stickmanY;
+        };
+
+
 
   setInterval(function () {
     let obstacle = new Obstacle();
     obstacle.show();
+
+    setInterval(function () {
+       let kolizja = obstacle.checkCollision($('#stick-man'));
+        if (kolizja){
+           console.log("wystapila kolizja")
+        }
+    },1000)
+
   }, 2000);
+
+    var stickman = "#stick-man";
+
 
   function initGame() {
     moveBackground();
