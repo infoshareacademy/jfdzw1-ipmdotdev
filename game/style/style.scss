@@ -10,20 +10,19 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 500px;
-    width: 500px;
+    height: 495px;
+    width: 495px;
     background-image: url('../img/game_bg.png');
     background-repeat: repeat-y;
   }
 }
 
   #stick-man {
-    width: 30px;
-    height: 30px;
+    width: 55px;
+    height: 55px;
     background-color: #FF0000;
-    position:absolute;
-    padding:10px;
     border-radius: 5px;
-    top:400px;
-    left: 250px;
+    top:440px;
+    left: 220px;
+    position: relative;
 }

@@ -32,25 +32,25 @@ $(document).ready(function () {
     $(document).keydown(function(e) {
         switch(e.which) {
             case 37: // left
-                $('#stick-man').animate({
+                $('#stick-man').stop().animate({
                     'marginLeft': '-=55px'
                 });
                 break;
 
             case 38: // up
-                $('#stick-man').animate({
+                $('#stick-man').stop().animate({
                     'marginTop': '-=55px'
                 });
                 break;
 
             case 39: // right
-                $('#stick-man').animate({
+                $('#stick-man').stop().animate({
                     'marginLeft': '+=55px'
                 });
                 break;
 
             case 40: // down
-                $('#stick-man').animate({
+                $('#stick-man').stop().animate({
                     'marginTop': '+=55px'
                 });
                 break;
