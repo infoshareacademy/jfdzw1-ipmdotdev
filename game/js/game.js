@@ -141,7 +141,7 @@ console.log(positionOfStickMan)
         }
     },1000)
 
-  }, 2000);
+  }, 2200);
 
 
 
