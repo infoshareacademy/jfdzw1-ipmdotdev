@@ -33,39 +33,57 @@ $(document).ready(function () {
 let keypressed = false
     $(document).keyup(()=> keypressed=false)
     $(document).keydown(function(e) {
-        if(keypressed){
+
+        var positionOfStickMan = $("#stick-man").position();
+console.log(positionOfStickMan)
+
+        if (keypressed) {
             return
         }
-        keypressed=true
+        keypressed = true
         console.log('pressed', e.which)
-        switch(e.which) {
+        switch (e.which) {
             case 37: // left
+                if (positionOfStickMan.left === 0){
+                    break
+                }
                 $('#stick-man').stop().animate({
                     'left': `-=${spotSize}px`
-                },50);
+                }, 50);
                 break;
 
             case 38: // up
+                if (positionOfStickMan.top < 55) {
+                    break
+                }
                 $('#stick-man').stop().animate({
                     'top': `-=${spotSize}px`
-                },50);
+                }, 50);
                 break;
 
             case 39: // right
+                if (positionOfStickMan.left > 385) {
+                    break
+                }
                 $('#stick-man').stop().animate({
                     'left': `+=${spotSize}px`
-                },50);
+                }, 50);
                 break;
 
             case 40: // down
+                if (positionOfStickMan.top > 385) {
+                    break
+                }
                 $('#stick-man').stop().animate({
                     'top': `+=${spotSize}px`
-                },50);
+                }, 50);
                 break;
 
-            default: return;
+            default:
+                return;
         }
         e.preventDefault();
+
     });
 
   function Obstacle() {
