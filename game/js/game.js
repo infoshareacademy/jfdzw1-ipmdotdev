@@ -30,31 +30,37 @@ $(document).ready(function () {
     }, 20);
   }
 
-
+let keypressed = false
+    $(document).keyup(()=> keypressed=false)
     $(document).keydown(function(e) {
+        if(keypressed){
+            return
+        }
+        keypressed=true
+        console.log('pressed', e.which)
         switch(e.which) {
             case 37: // left
                 $('#stick-man').stop().animate({
                     'left': `-=${spotSize}px`
-                });
+                },50);
                 break;
 
             case 38: // up
                 $('#stick-man').stop().animate({
                     'top': `-=${spotSize}px`
-                });
+                },50);
                 break;
 
             case 39: // right
                 $('#stick-man').stop().animate({
                     'left': `+=${spotSize}px`
-                });
+                },50);
                 break;
 
             case 40: // down
                 $('#stick-man').stop().animate({
                     'top': `+=${spotSize}px`
-                });
+                },50);
                 break;
 
             default: return;
