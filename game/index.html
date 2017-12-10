@@ -12,7 +12,7 @@
 <body>
 <div class="container">
     <div class="game-menu">
-        <button type="button" class="btn btn-default navbar-btn">Help</button>
+        <button type="button" class="btn btn-default navbar-btn" data data-toggle="modal" data-target="#myHelp">Help</button>
         <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Best Scores</button>
         <p class="navbar-text">Imię Gracza</p>
         <p class="navbar-text">Wynik</p>
@@ -52,6 +52,27 @@
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myHelp" role="dialog">
+    <div class="modal-dialog help">
+        <!-- Modal content-->
+        <div class="modal-content help">
+            <div class="modal-header help">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Instrukcja</h4>
+            </div>
+            <div class="modal-body">
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 
 </body>

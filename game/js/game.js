@@ -135,13 +135,15 @@ console.log(positionOfStickMan)
     obstacle.show();
 
     setInterval(function () {
-       let kolizja = obstacle.checkCollision($('#stick-man'));
-        if (kolizja){
-           console.log("wystapila kolizja")
+       let collision = obstacle.checkCollision($('#stick-man'));
+        if (collision){
+           alert("Game Over")
         }
     },1000)
 
   }, 2000);
+
+
 
     var stickman = "#stick-man";
 
