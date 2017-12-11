@@ -126,7 +126,7 @@
                         <h3>Zapisz się do newslettera i nie przegap premiery.*</h3>
                         <input type="text" placeholder="Imię" name="name" required />
                         <input type="email" placeholder="Email" name="email" required />
-                        <button class="submit">Zapisz się</button>
+                        <button class="submit" data-toggle="modal" data-target="#myModal">Zapisz się</button>
                         <p>*Otrzymasz tylko jeden email z informacją o premierze naszej aplikacji.<br/>
                             Twoje dane są z nami bezpieczne.</p>
                     </div>
@@ -215,24 +215,43 @@
                 </div>
             </div>
             <p class="footer-copyright">IPM.dev copyright 2017®</p>
+
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Ranking</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table" id="ranking">
+                                <thead>
+                                <tr>
+                                    <th>Pozycja</th>
+                                    <th>Name</th>
+                                    <th>score</th>
+                                </tr>
+                                </thead>
+                                <tbody id="modalBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <object width="500" height="500" data="./game/"></object>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <!-- PARALLAX EFFECT -->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <script src="js/scroll_animations.js" type="text/javascript"></script>
-    <script>
-        $(document).ready(function(){
-        $(".newsletter-box-form .submit").click(function(){
-        window.open("./game/")
 
-        }
-        )
-
-        })
-
-
-
-    </script>
     </body>
 </html>
