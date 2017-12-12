@@ -6,6 +6,11 @@ $(document).ready(function () {
 
 
   $('#myModal').on('shown.bs.modal', function () {
+
+     // var name = $("#gameform").data("name");
+    //  $("#myGame").attr("data", "./game?name=" + name);
+
+
     let $table = $('#modalBody');
     $table.empty();
     myScoreboard.forEach(function (e, i) {

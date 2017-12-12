@@ -120,13 +120,14 @@
                     <img class="newsletter-img" src="img/man-in-space.jpg" alt="człowiek stojący na księżycu z flagą"/>
                 </div>
 
-                <div class="newsletter-box-form">
+                <div class="newsletter-box-form" id="gameform">
                     <div>
                         <h2>Mały krok dla Ciebie.<br/>Wielki krok dla Twojego życia.</h2>
                         <h3>Zapisz się do newslettera i nie przegap premiery.*</h3>
-                        <input type="text" placeholder="Imię" name="name" required />
+
+                        <input id="username" type="text" placeholder="Imię" name="username" required />
                         <input type="email" placeholder="Email" name="email" required />
-                        <button class="submit" data-toggle="modal" data-target="#myModal">Zapisz się</button>
+                        <button id="gamebutton" class="submit" data-toggle="modal" data-target="#myModal">Zapisz się</button>
                         <p>*Otrzymasz tylko jeden email z informacją o premierze naszej aplikacji.<br/>
                             Twoje dane są z nami bezpieczne.</p>
                     </div>
@@ -220,28 +221,12 @@
                 <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Ranking</h4>
-                        </div>
-                        <div class="modal-body">
-                            <table class="table" id="ranking">
-                                <thead>
-                                <tr>
-                                    <th>Pozycja</th>
-                                    <th>Name</th>
-                                    <th>score</th>
-                                </tr>
-                                </thead>
-                                <tbody id="modalBody">
 
-                                </tbody>
-                            </table>
-                        </div>
-                        <object width="500" height="500" data="./game/"></object>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
+
+
+                        <object id="myGame" width="500" height="700" data="./game/index.html"></object>
+
+
                     </div>
                 </div>
             </div>
@@ -252,6 +237,23 @@
         <!-- PARALLAX EFFECT -->
         <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
         <script src="js/scroll_animations.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+        $("#gamebutton").click(function(){
+            var aname = $("#username").val(); //pobieram zawartos txtboxu z nazwa uzytkownika
+
+            //var cLoc = $(location).attr('host'); <- rozne probowalem
+            var newUrl = "http://localhost:63342/jfdzw1-ipmdotdev" +"/game/index.html?name=" + aname;
+            /// czym zastapic -^
+            alert(newUrl);
+
+            $("#myGame").attr("data", newUrl);
+
+        });
+    });
+
+
+</script>
 
     </body>
 </html>
