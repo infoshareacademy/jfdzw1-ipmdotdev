@@ -5,7 +5,7 @@ $(document).ready(function () {
   let myScoreboard = getResults(scoreboard);
 
 
-  $('#myModal').on('shown.bs.modal', function () {
+  $('#gameModal').on('shown.bs.modal', function () {
     let $table = $('#modalBody');
     $table.empty();
     myScoreboard.forEach(function (e, i) {
