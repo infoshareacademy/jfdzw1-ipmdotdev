@@ -17,7 +17,6 @@ function createPlayer(name, score) {
   }
 
   return player;
-
 }
 
 function insertPlayer(player) {
@@ -28,17 +27,14 @@ function insertPlayer(player) {
             break;
         }
     }
-
 }
 
 function getResults() {
     var results = scoreboard.slice(0);
     return results;
-
 }
 
 function sample() {
-
   initScoreboard();
   insertPlayer(createPlayer('test', 9999));
 
@@ -53,5 +49,4 @@ function sample() {
   } else {
     console.log('Tabela wyników nie ma długości 5');
   }
-
 }

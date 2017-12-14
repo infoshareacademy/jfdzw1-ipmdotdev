@@ -6,6 +6,7 @@ $(document).ready(function () {
 
 
   $('#gameModal').on('shown.bs.modal', function () {
+
     let $table = $('#modalBody');
     $table.empty();
     myScoreboard.forEach(function (e, i) {
@@ -137,7 +138,7 @@ console.log(positionOfStickMan)
     setInterval(function () {
        let collision = obstacle.checkCollision($('#stick-man'));
         if (collision){
-           alert("Game Over")
+          // alert("Game Over")
         }
     },1000)
 
