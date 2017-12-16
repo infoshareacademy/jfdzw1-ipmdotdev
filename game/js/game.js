@@ -5,6 +5,7 @@ function game() {
     const spotSize = 55; //size of one 'corridor' on game-board. 55 is 495 / 9.
     const myScoreboard = getResults(scoreboard);
     const intervals = [];
+    let newScore;
 
     $('#rankingModal').on('shown.bs.modal', function () {
 
@@ -27,6 +28,9 @@ function game() {
       intervals.push(setInterval(function () {
         x += 1;
         $('.game-board').css('background-position', '0 ' + x + 'px');
+
+        showScore();
+
       }, 20));
     }
 
@@ -85,6 +89,11 @@ function game() {
 
     }, 2200));
 
+    function showScore() {
+      newScore = parseInt($('.game-board').css('background-position-y'));
+      $('#playerScore').text(newScore);
+    }
+
     function gameOver() {
       intervals.forEach(x => clearInterval(x));
       $(document).off('keydown');
@@ -110,5 +119,6 @@ function game() {
     initScoreboard();
     initGame();
     stickmanManager({spotSize: spotSize});
+    showScore();
   });
 }

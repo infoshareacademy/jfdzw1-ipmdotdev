@@ -1,4 +1,4 @@
-var scoreboard = [];
+const scoreboard = [];
 
 function initScoreboard() {
   if (scoreboard.length === 0) {
