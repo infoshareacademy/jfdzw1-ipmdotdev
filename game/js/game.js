@@ -119,6 +119,5 @@ function game() {
     initScoreboard();
     initGame();
     stickmanManager({spotSize: spotSize});
-    showScore();
   });
 }

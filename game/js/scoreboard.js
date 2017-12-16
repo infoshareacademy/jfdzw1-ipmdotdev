@@ -11,7 +11,7 @@ function initScoreboard() {
 }
 
 function createPlayer(name, score) {
-  var player = {
+  const player = {
     name: name,
     score: score
   }
@@ -19,7 +19,7 @@ function createPlayer(name, score) {
 }
 
 function insertPlayer(player) {
-  for (var i = 0; i < 5; i++) {
+  for (let i = 0; i < 5; i++) {
     if (player.score > scoreboard[i].score) {
       scoreboard.splice(i, 0, player);
       scoreboard.pop();
@@ -29,6 +29,6 @@ function insertPlayer(player) {
 }
 
 function getResults() {
-  var results = scoreboard.slice(0);
+  let results = scoreboard.slice(0);
   return results;
 }
