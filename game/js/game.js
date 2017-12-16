@@ -81,13 +81,6 @@ function game() {
         this.height + obstacleY > stickmanY;
     };
 
-
-    intervals.push(setInterval(function () {
-      let obstacle = new Obstacle();
-      obstacle.show();
-
-    }, 2200));
-
     function showScore() {
       newScore = parseInt($('.game-board').css('background-position-y'));
       $('#playerScore').text(newScore);
@@ -98,7 +91,7 @@ function game() {
       $(document).off('keydown');
 
       let newPlayer, playerName, playerScore;
-      
+
       playerName = $('#playerName').text();
       playerScore = parseInt($('#playerScore').text());
 
@@ -108,15 +101,21 @@ function game() {
 
       $('#rankingModal').modal('show');
 
-
-
     }
 
     function initGame() {
       moveBackground();
-      const name = getParameterByName('name');
-      $('#playerName').html(name);
+      stickmanManager({spotSize: spotSize});
+
+      intervals.push(setInterval(function () {
+        let obstacle = new Obstacle();
+        obstacle.show();
+
+      }, 2200));
     }
+
+    const name = getParameterByName('name');
+    $('#playerName').html(name);
 
     function getParameterByName(name, url) {
       if (!url) url = window.location.href;
@@ -129,7 +128,8 @@ function game() {
     }
 
     initScoreboard();
-    initGame();
-    stickmanManager({spotSize: spotSize});
+    $('#start-new-game').click(initGame);
+
+
   });
 }

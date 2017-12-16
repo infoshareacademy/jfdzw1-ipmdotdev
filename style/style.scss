@@ -289,27 +289,28 @@ body, html {
             padding: 0px 20px;
             color: $standard-text-color;
 
-.modal-content {
-    width: 900px;
-}
+            .modal-content {
+                width: 600px;
+                height: 600px;
 
-            .modal {
-                text-align: center;
-                padding: 0!important;
-            }
+                .modal-header {
+                    background-color: #404154;
+                    border-bottom: none;
+                    padding: 0px 15px;
 
-            .modal:before {
-                content: '';
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
-                margin-right: -4px; /* Adjusts for spacing */
-            }
+                    p {
+                        font-size: 12px;
+                        margin: 13px 0px;
+                        float: left;
+                        color: #fff;
+                    }
 
-            .modal-dialog {
-                display: inline-block;
-                text-align: left;
-                vertical-align: middle;
+                    .close {
+                        color: #fff;
+                        font-size: 40px;
+                        opacity: 1;
+                    }
+                }
             }
 
             h2 {
@@ -349,7 +350,7 @@ body, html {
                 }
             }
 
-            button {
+            .submit {
                 margin: 10px 0px;
                 width: 90%;
                 background-color: $dark-green-color;
