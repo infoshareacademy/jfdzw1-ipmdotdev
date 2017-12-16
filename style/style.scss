@@ -207,14 +207,11 @@ body, html {
     }
 }
 
-
 /* ##########HERO-HEADER-END########## */
 
 /* ##########MAIN-SECTION-START########## */
 
 /* ##########BOX PRODUCT-INFO-START########## */
-
-
 
 .section-title {
     font-size: 2.5rem;
@@ -246,11 +243,6 @@ body, html {
         height: 50%;
     }
 }
-
-
-
-
-
 
 /* ##########BOX PRODUCT-INFO-END########## */
 
@@ -297,8 +289,28 @@ body, html {
             padding: 0px 20px;
             color: $standard-text-color;
 
-            div {
-                width: 100%;
+            .modal-content {
+                width: 600px;
+                height: 600px;
+
+                .modal-header {
+                    background-color: #404154;
+                    border-bottom: none;
+                    padding: 0px 15px;
+
+                    p {
+                        font-size: 12px;
+                        margin: 13px 0px;
+                        float: left;
+                        color: #fff;
+                    }
+
+                    .close {
+                        color: #fff;
+                        font-size: 40px;
+                        opacity: 1;
+                    }
+                }
             }
 
             h2 {
@@ -338,7 +350,7 @@ body, html {
                 }
             }
 
-            button {
+            .submit {
                 margin: 10px 0px;
                 width: 90%;
                 background-color: $dark-green-color;

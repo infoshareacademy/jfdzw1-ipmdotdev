@@ -332,8 +332,22 @@ body, html {
       align-items: center;
       padding: 0px 20px;
       color: #404154; }
-      .newsletter-container .newsletter-box-flex .newsletter-box-form div {
-        width: 100%; }
+      .newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content {
+        width: 600px;
+        height: 600px; }
+        .newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header {
+          background-color: #404154;
+          border-bottom: none;
+          padding: 0px 15px; }
+          .newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header p {
+            font-size: 12px;
+            margin: 13px 0px;
+            float: left;
+            color: #fff; }
+          .newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header .close {
+            color: #fff;
+            font-size: 40px;
+            opacity: 1; }
       .newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
         margin-top: 0px;
         font-size: 2.0rem; }
@@ -359,7 +373,7 @@ body, html {
           text-align: center; }
         .newsletter-container .newsletter-box-flex .newsletter-box-form input::placeholder {
           color: #108489; }
-      .newsletter-container .newsletter-box-flex .newsletter-box-form button {
+      .newsletter-container .newsletter-box-flex .newsletter-box-form .submit {
         margin: 10px 0px;
         width: 90%;
         background-color: #108489;
@@ -374,7 +388,7 @@ body, html {
         -webkit-transition: background-color 1s, color 1s, border 1s;
         -moz-transition: background-color 1s, color 1s, border 1s;
         transition: background-color 1s, color 1s, border 1s; }
-        .newsletter-container .newsletter-box-flex .newsletter-box-form button:hover {
+        .newsletter-container .newsletter-box-flex .newsletter-box-form .submit:hover {
           -webkit-animation: swing 1s ease;
           -moz-animation: swing 1s ease;
           animation: swing 1s ease;

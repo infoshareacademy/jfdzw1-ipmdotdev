@@ -1,15 +1,28 @@
 body {
   background-color: #404154;
 
-  .navbar-text {
+  .game-menu-btn {
+    float: right;
+  }
+
+  .player-name {
+    float: left;
     color: #f5f5f5;
+    font-size: 20px;
+  }
+
+  .player-score {
+    font-size: 20px;
+    color: #f5f5f5;
+    float: left;
+    clear: left;
   }
 
   .game-board {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     height: 495px;
     width: 495px;
     background-image: url('../img/game_bg.png');
