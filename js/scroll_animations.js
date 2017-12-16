@@ -39,6 +39,8 @@ $('.navbar-collapse a').click(function (e) {
 });
 
 
+
+//COOKIE
 jQuery(function($) {
 
     checkCookie_eu();
@@ -88,3 +90,6 @@ jQuery(function($) {
     });
 
 });
+
+
+

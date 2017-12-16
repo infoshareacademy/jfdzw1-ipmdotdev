@@ -488,3 +488,17 @@ footer {
 
 /* ##########FOOTER-SECTION-END########## */
 
+/* img */
+
+
+.about-us-img {
+    -webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease;
+}
+.about-us-img:hover {
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -webkit-transition: all 0.6s;
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+}
