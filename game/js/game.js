@@ -3,12 +3,11 @@ function game() {
   $(document).ready(function () {
 
     const spotSize = 55; //size of one 'corridor' on game-board. 55 is 495 / 9.
-    const myScoreboard = getResults(scoreboard);
     const intervals = [];
     let newScore;
 
     $('#rankingModal').on('shown.bs.modal', function () {
-
+      const myScoreboard = getResults(scoreboard);
       let $table = $('#rankingModalBody');
       $table.empty();
       myScoreboard.forEach(function (e, i) {
@@ -97,6 +96,19 @@ function game() {
     function gameOver() {
       intervals.forEach(x => clearInterval(x));
       $(document).off('keydown');
+
+      let newPlayer, playerName, playerScore;
+      
+      playerName = $('#playerName').text();
+      playerScore = parseInt($('#playerScore').text());
+
+      newPlayer = createPlayer(playerName, playerScore);
+
+      insertPlayer(newPlayer);
+
+      $('#rankingModal').modal('show');
+
+
 
     }
 
