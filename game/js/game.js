@@ -4,6 +4,7 @@ function game() {
 
     const spotSize = 55; //size of one 'corridor' on game-board. 55 is 495 / 9.
     const myScoreboard = getResults(scoreboard);
+    const intervals = [];
 
     $('#rankingModal').on('shown.bs.modal', function () {
 
@@ -23,10 +24,10 @@ function game() {
 
     function moveBackground() {
       let x = 0;
-      setInterval(function () {
+      intervals.push(setInterval(function () {
         x += 1;
         $('.game-board').css('background-position', '0 ' + x + 'px');
-      }, 20);
+      }, 20));
     }
 
     function Obstacle() {
@@ -46,7 +47,7 @@ function game() {
 
     Obstacle.prototype.startMoving = function () {
       let that = this;
-      setInterval(function () {
+      intervals.push(setInterval(function () {
 
         let newTop = parseInt(that.$elem.css('top')) + 1;
         that.$elem.css('top', `${newTop}px`);
@@ -54,7 +55,13 @@ function game() {
         if (newTop >= $('.game-board').innerHeight()) {
           that.$elem.remove();
         }
-      }, 20);
+
+        let collision = that.checkCollision($('#stick-man'));
+        if (collision) {
+          gameOver();
+        }
+
+      }, 20));
     };
 
     Obstacle.prototype.checkCollision = function (stickman) {
@@ -72,19 +79,17 @@ function game() {
     };
 
 
-    setInterval(function () {
+    intervals.push(setInterval(function () {
       let obstacle = new Obstacle();
       obstacle.show();
 
-      setInterval(function () {
-        let collision = obstacle.checkCollision($('#stick-man'));
-        if (collision) {
-          // alert("Game Over")
-        }
-      }, 1000)
+    }, 2200));
 
-    }, 2200);
+    function gameOver() {
+      intervals.forEach(x => clearInterval(x));
+      $(document).off('keydown');
 
+    }
 
     function initGame() {
       moveBackground();
