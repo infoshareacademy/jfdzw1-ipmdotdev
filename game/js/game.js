@@ -117,7 +117,7 @@ function game() {
 
       obstacles.forEach(x => x.remove());
       obstacles = [];
-      
+
       $('.game-board').css('background-position', '0px');
 
       intervals.push(setInterval(function () {
