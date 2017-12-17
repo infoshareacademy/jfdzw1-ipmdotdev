@@ -56,4 +56,9 @@ function stickmanManager(props) {
 
   });
 
+  return {
+    resetGame: function() {
+      $stickman.css({ top: '440px', left: '220px'})
+    }
+  }
 }

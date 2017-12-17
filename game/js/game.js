@@ -4,6 +4,8 @@ function game() {
 
     const spotSize = 55; //size of one 'corridor' on game-board. 55 is 495 / 9.
     const intervals = [];
+    let obstacles = [];
+    let manager;
     let newScore;
 
     $('#rankingModal').on('shown.bs.modal', function () {
@@ -56,7 +58,7 @@ function game() {
         that.$elem.css('top', `${newTop}px`);
 
         if (newTop >= $('.game-board').innerHeight()) {
-          that.$elem.remove();
+          that.remove();
         }
 
         let collision = that.checkCollision($('#stick-man'));
@@ -67,6 +69,9 @@ function game() {
       }, 20));
     };
 
+    Obstacle.prototype.remove = function() {
+      this.$elem.remove();
+    }
     Obstacle.prototype.checkCollision = function (stickman) {
       let stickmanX = parseInt(stickman.css('left').slice(0, -2));
       let stickmanY = parseInt(stickman.css('top').slice(0, -2));
@@ -104,11 +109,20 @@ function game() {
     }
 
     function initGame() {
+
       moveBackground();
-      stickmanManager({spotSize: spotSize});
+
+      manager = stickmanManager({spotSize: spotSize});
+      manager.resetGame();
+
+      obstacles.forEach(x => x.remove());
+      obstacles = [];
+      
+      $('.game-board').css('background-position', '0px');
 
       intervals.push(setInterval(function () {
         let obstacle = new Obstacle();
+        obstacles.push(obstacle);
         obstacle.show();
 
       }, 2200));
