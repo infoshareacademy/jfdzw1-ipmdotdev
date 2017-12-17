@@ -57,7 +57,7 @@ function stickmanManager(props) {
   });
 
   return {
-    resetGame: function() {
+    resetPosition: function() {
       $stickman.css({ top: '440px', left: '220px'})
     }
   }

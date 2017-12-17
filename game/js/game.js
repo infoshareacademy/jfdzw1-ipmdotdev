@@ -5,7 +5,7 @@ function game() {
     const spotSize = 55; //size of one 'corridor' on game-board. 55 is 495 / 9.
     const intervals = [];
     let obstacles = [];
-    let manager;
+    let stickManager;
     let newScore;
 
     $('#rankingModal').on('shown.bs.modal', function () {
@@ -112,8 +112,8 @@ function game() {
 
       moveBackground();
 
-      manager = stickmanManager({spotSize: spotSize});
-      manager.resetGame();
+      stickManager = stickmanManager({spotSize: spotSize});
+      stickManager.resetPosition();
 
       obstacles.forEach(x => x.remove());
       obstacles = [];
