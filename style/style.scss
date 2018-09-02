@@ -8,6 +8,7 @@ body, html {
     font-family: $standard-font;
     color: $standard-text-color;
     font-size: $standard-font-size;
+    scroll-behavior: smooth;
 }
 
 .parallax-mirror {
