@@ -1,0 +1,691 @@
+/* ##########GLOBAL-VARIABLES-START########## */
+/* ##########GLOBAL-VARIABLES-END########## */
+/* ##########MIXINS-START########## */
+/* ##########MIXINS-END########## */
+/* ##########ANIMATIONS-START########## */
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  30% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+  50% {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+  }
+  65% {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideanim {
+  visibility: hidden;
+}
+
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+/* ##########ANIMATIONS-END########## */
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #f5f5f5;
+  font-family: "Lato", sans-serif;
+  color: #404154;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.parallax-mirror {
+  z-index: 1 !important;
+}
+
+.anchor-fix {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
+/* ##########NAV-BAR-START########## */
+.navbar {
+  padding: 10px 0;
+  letter-spacing: 0.05rem;
+}
+
+.navbar .navbar-logo {
+  max-height: 40px;
+  margin-top: 5px;
+}
+
+.navbar .navbar-nav li {
+  padding: 2px;
+}
+
+.navbar .navbar-nav li a {
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+.navbar .navbar-nav li a:hover {
+  background-color: #108489;
+  color: #f5f5f5;
+}
+
+.navbar .navbar-nav li.active a {
+  background-color: #00C4CC;
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+.navbar .navbar-nav li.active a:hover {
+  background-color: #108489;
+  color: #f5f5f5;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .nav {
+    font-size: 0.8rem;
+  }
+  .navbar .navbar-logo {
+    max-height: 30px;
+    margin-top: 12px;
+  }
+}
+
+/* ##########NAV-BAR-END########## */
+/* ##########HERO-HEADER-START########## */
+.hero-header-background-photo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-height: 480px) {
+  .flex-container {
+    margin-top: 70px;
+  }
+}
+
+.hero-header-box {
+  color: #f5f5f5;
+  border: none;
+  text-align: center;
+  z-index: 2;
+}
+
+.hero-header-box .hero-header-text-bold {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.hero-header-box .hero-header-text-normal {
+  font-size: 3.25rem;
+  font-weight: 300;
+}
+
+.hero-header-box .hero-header-button-join-us {
+  background-color: #00C4CC;
+  color: #f5f5f5;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  font-size: 2.0rem;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px 0;
+  width: 80%;
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+.hero-header-box .hero-header-button-join-us:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-iteration-count: 1;
+  animation-iteration-count: 1;
+  color: #00C4CC;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-header-box .hero-header-button-join-us {
+    width: 100%;
+  }
+}
+
+.hero-header-box .hero-header-copy-text {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-height: 480px) {
+  .hero-header-box .hero-header-copy-text {
+    display: none;
+  }
+}
+
+.hero-header-box .hero-header-button-more {
+  border: 2px solid #f5f5f5;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #f5f5f5;
+  padding: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  width: 80%;
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s, color 1s;
+  transition: background-color 1s, color 1s;
+}
+
+.hero-header-box .hero-header-button-more:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-iteration-count: 1;
+  animation-iteration-count: 1;
+  background-color: #f5f5f5;
+  color: #00C4CC;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-header-box .hero-header-button-more {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero-header-box .hero-header-text-bold {
+    font-size: 2.5rem;
+  }
+  .hero-header-box .hero-header-text-normal {
+    font-size: 2.5rem;
+  }
+  .hero-header-box .hero-header-button-join-us {
+    font-size: 1.75rem;
+  }
+  .hero-header-box .hero-header-copy-text {
+    font-size: 1.0rem;
+  }
+  .hero-header-box .hero-header-button-more {
+    font-size: 1.0rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-header-box .hero-header-text-bold {
+    font-size: 2rem;
+  }
+  .hero-header-box .hero-header-text-normal {
+    font-size: 2rem;
+  }
+  .hero-header-box .hero-header-button-join-us {
+    font-size: 1.5rem;
+  }
+  .hero-header-box .hero-header-copy-text {
+    font-size: 1.0rem;
+  }
+  .hero-header-box .hero-header-button-more {
+    font-size: 1.0rem;
+  }
+}
+
+/* ##########HERO-HEADER-END########## */
+/* ##########MAIN-SECTION-START########## */
+/* ##########BOX PRODUCT-INFO-START########## */
+.section-title {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #108489;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  padding: 8px;
+}
+
+.flex-container {
+  font-size: 1.5rem;
+  color: #404154;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.product-info {
+  width: 20%;
+  min-width: 350px;
+  padding: 20px 20px 80px 20px;
+  border: 20px;
+}
+
+.product-info .product-info-text {
+  font-size: 16px;
+}
+
+.product-info .product-info-img {
+  width: 50%;
+  height: 50%;
+}
+
+/* ##########BOX PRODUCT-INFO-END########## */
+.main-body-background-photo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.center-bottom-background-photo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* ##########FORM-NEWSLETTER-START########## */
+.newsletter-container {
+  background-color: #f5f5f5;
+  width: 100%;
+  padding: 20px 0 40px 0;
+}
+
+.newsletter-container .newsletter-box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-img {
+  max-width: 100%;
+  padding: 0px 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .newsletter-container .newsletter-box-flex .newsletter-box-img {
+    display: none;
+  }
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 20px;
+  color: #404154;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content {
+  width: 600px;
+  height: 600px;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header {
+  background-color: #404154;
+  border-bottom: none;
+  padding: 0px 15px;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header p {
+  font-size: 12px;
+  margin: 13px 0px;
+  float: left;
+  color: #fff;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .modal-content .modal-header .close {
+  color: #fff;
+  font-size: 40px;
+  opacity: 1;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
+  margin-top: 0px;
+  font-size: 2.0rem;
+}
+
+@media screen and (max-width: 500px) {
+  .newsletter-container .newsletter-box-flex .newsletter-box-form h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form h3 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .newsletter-container .newsletter-box-flex .newsletter-box-form h3 {
+    font-size: 1.25rem;
+  }
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input {
+  width: 90%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #404154;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #108489;
+  font-size: 16px;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input:placeholder-shown {
+  text-align: center;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input::-webkit-input-placeholder {
+  color: #108489;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input:-ms-input-placeholder {
+  color: #108489;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input::-ms-input-placeholder {
+  color: #108489;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form input::placeholder {
+  color: #108489;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .submit {
+  margin: 10px 0px;
+  width: 90%;
+  background-color: #108489;
+  border: 2px solid #108489;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2.0rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  height: 60px;
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s, color 1s, border 1s;
+  transition: background-color 1s, color 1s, border 1s;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form .submit:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  -moz-iteration-count: 1;
+  animation-iteration-count: 1;
+  color: #108489;
+  background-color: #f5f5f5;
+  border: 2px solid #108489;
+}
+
+.newsletter-container .newsletter-box-flex .newsletter-box-form p {
+  font-size: 0.6rem;
+}
+
+/* ##########FORM-NEWSLETTER-END########## */
+.bottom-background-photo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* ##########ABOUT-US-START########## */
+.about-us-section {
+  background: #f5f5f5;
+  padding: 20px 0;
+}
+
+.about-us-member {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-us-img {
+  margin: 20px 20px 0 20px;
+  border-radius: 50%;
+}
+
+.about-us-member h3 {
+  margin-bottom: 0;
+}
+
+.about-us-text {
+  font-size: 16px;
+  margin-bottom: 25px;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 400px) {
+  .about-us-text {
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+}
+
+.about-us-socials img {
+  padding: 20px 10px 0px 10px;
+}
+
+.about-us-socials img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* ##########ABOUT-US-END########## */
+.footer-background-photo {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+/* ##########MAIN-SECTION-END########## */
+/* ##########FOOTER-START########## */
+footer {
+  background-color: #108489;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section-title-white {
+  font-size: 2rem;
+  margin: 0 0 20px 0;
+  color: #f5f5f5;
+}
+
+.footer-socials-logos {
+  display: inline-block;
+  padding: 10px;
+  max-width: 85px;
+  margin: 10px auto;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.footer-socials-logos:hover {
+  background-color: #00C4CC;
+  -webkit-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+
+.footer-menu {
+  width: 100%;
+  background-color: #108489;
+  margin-left: 1px;
+}
+
+.footer-menu a:hover {
+  text-decoration: none;
+}
+
+.footer-menu-list {
+  height: 40px;
+  padding: 5px;
+  color: #f5f5f5;
+  font-size: 1.5rem;
+  background-color: #108489;
+  text-align: center;
+  border-radius: 10px;
+  /* $var: null - this :null makes variable optional, you don't need to specify it in include if you don't want to */
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.footer-menu-list:hover {
+  background-color: #00C4CC;
+}
+
+.footer-copyright {
+  font-size: 1rem;
+  color: #f5f5f5;
+  margin-top: 15px;
+}
+
+/* ##########FOOTER-SECTION-END########## */
+/* img */
+.about-us-img {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+.about-us-img:hover {
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+}
+/*# sourceMappingURL=style.css.map */

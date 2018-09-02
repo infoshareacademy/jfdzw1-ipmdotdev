@@ -1,0 +1,49 @@
+body {
+  background-color: #404154;
+
+  .game-menu-btn {
+    float: right;
+  }
+
+  .player-name {
+    float: left;
+    color: #f5f5f5;
+    font-size: 20px;
+  }
+
+  .player-score {
+    font-size: 20px;
+    color: #f5f5f5;
+    float: left;
+    clear: left;
+  }
+
+  .game-board {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    height: 495px;
+    width: 495px;
+    background-image: url('../img/game_bg.png');
+    background-repeat: repeat-y;
+    overflow: hidden;
+
+    #stick-man {
+      width: 55px;
+      height: 55px;
+      background-image: url('../img/hero.png');
+      border-radius: 5px;
+      top:440px;
+      left: 220px;
+      position: relative;
+    }
+
+    .obstacle {
+      position: absolute;
+      background-image: url('../img/obstacle_bg.jpg');
+      overflow: hidden;
+    }
+  }
+}
+
